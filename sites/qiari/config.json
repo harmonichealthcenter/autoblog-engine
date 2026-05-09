@@ -1,0 +1,13 @@
+{
+  "name": "Qiari.ai",
+  "site_url": "https://www.qiari.ai",
+  "site_domain": "qiari.ai",
+  "schedule": {
+    "enabled": true
+  },
+  "publish": {
+    "adapter": "github",
+    "branch": "main",
+    "path": "content/blog"
+  }
+}

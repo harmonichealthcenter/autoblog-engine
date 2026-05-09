@@ -1,0 +1,16 @@
+{
+  "_note": "Curated real customer reviews from Trustpilot and other public sources. The system prompt is told to quote from this corpus when writing Stream A reputation articles. Until a curated set is added (or scraped + reviewed by David), the array stays empty and the prompt instructs the model to indicate that real reviews should be inserted at human review.",
+  "_provenance_required": "Every entry must include the source URL, the date pulled, the verbatim quote, the author display name as Trustpilot shows it, and the star rating. Do not paraphrase. Do not synthesize. The whole point of this corpus is that it's real.",
+  "_schema": {
+    "id": "string, e.g. trustpilot-001",
+    "source": "trustpilot | reddit | quora | youtube | other",
+    "source_url": "string",
+    "pulled_at": "ISO-8601 date",
+    "author": "string as displayed publicly",
+    "rating": "1-5 (Trustpilot) or null",
+    "verbatim_quote": "string, exact text",
+    "sentiment": "positive | mixed | critical",
+    "stream_a_use": "boolean — okay to quote in articles?"
+  },
+  "reviews": []
+}

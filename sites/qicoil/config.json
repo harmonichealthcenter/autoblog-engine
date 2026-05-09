@@ -1,0 +1,40 @@
+{
+  "name": "Qicoil.com",
+  "site_url": "https://qicoil.com",
+  "site_domain": "qicoil.com",
+  "schedule": {
+    "enabled": true
+  },
+  "publish": {
+    "adapter": "github",
+    "branch": "main",
+    "path": "content/blog"
+  },
+  "compliance": {
+    "enabled": true,
+    "required_disclaimer": "not intended to diagnose, treat, cure, or prevent any disease",
+    "disclaimer_required_when_mentions": ["Qi Coil", "qi coil"],
+    "forbidden_patterns": [
+      "\\bcures?\\b",
+      "\\btreats?\\b",
+      "\\bheals?\\s+(disease|cancer|diabetes|depression|anxiety|illness)",
+      "FDA\\s+approved",
+      "clinically\\s+proven",
+      "miracle\\s+cure",
+      "doctors\\s+hate",
+      "big\\s+pharma\\s+doesn't\\s+want",
+      "ancient\\s+secret",
+      "100%\\s+effective",
+      "guaranteed\\s+results",
+      "always\\s+works",
+      "—"
+    ],
+    "flag_for_human": [
+      "\\bstudy\\b",
+      "\\bstudies\\b",
+      "\\bresearch\\s+(shows|proves|demonstrates)",
+      "\\bpeer[-\\s]reviewed\\b",
+      "\\bclinical\\s+trial"
+    ]
+  }
+}

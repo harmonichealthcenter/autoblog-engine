@@ -1,0 +1,29 @@
+{
+  "name": "autoblog-engine",
+  "version": "0.1.0",
+  "description": "Multi-site supervised SEO autoblog. Generates Claude-written drafts on a cron, queues them for human review, publishes approved drafts to a Git-backed content repo.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "generate": "node src/generate.js",
+    "review:list": "node src/review.js list",
+    "review:show": "node src/review.js show",
+    "review:approve": "node src/review.js approve",
+    "review:reject": "node src/review.js reject",
+    "review:edit": "node src/review.js edit",
+    "publish": "node src/publish.js",
+    "topics:add": "node src/topics.js add",
+    "topics:list": "node src/topics.js list"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "marked": "^14.1.2",
+    "node-cron": "^3.0.3"
+  }
+}

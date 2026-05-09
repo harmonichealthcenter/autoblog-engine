@@ -1,0 +1,605 @@
+[
+  {
+    "id": "qiari-001",
+    "title_hint": "What is Qiari.ai? A complete guide to remote frequency wellness in 2026",
+    "primary_keyword": "what is Qiari",
+    "secondary_keywords": ["Qiari.ai", "remote frequency wellness", "Qiari app", "AI frequency wellness platform"],
+    "type": "pillar",
+    "target_word_count": 2400,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-002",
+    "title_hint": "Remote Frequency Wellness Explained: The Complete 2026 Guide",
+    "primary_keyword": "remote frequency wellness",
+    "secondary_keywords": ["frequency wellness app", "remote energy sessions", "Qiari"],
+    "type": "pillar",
+    "target_word_count": 2300,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-003",
+    "title_hint": "The Definitive Guide to Remote Quantum Energy Sessions",
+    "primary_keyword": "remote quantum energy sessions",
+    "secondary_keywords": ["quantum energy app", "Qiari sessions", "remote quantum wellness"],
+    "type": "pillar",
+    "target_word_count": 2200,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-004",
+    "title_hint": "Frequency Wellness Without a Device: A Complete Walkthrough",
+    "primary_keyword": "frequency wellness without device",
+    "secondary_keywords": ["app-based frequency wellness", "no hardware frequency", "Qiari app"],
+    "type": "pillar",
+    "target_word_count": 2200,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-005",
+    "title_hint": "AI-Powered Frequency Wellness: How Personalization Changes the Game",
+    "primary_keyword": "AI frequency wellness platform",
+    "secondary_keywords": ["personalized frequency sessions", "AI wellness app", "Qiari"],
+    "type": "pillar",
+    "target_word_count": 2200,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-006",
+    "title_hint": "David Wong and the Qiari Origin Story: From Qi Coil to Remote Sessions",
+    "primary_keyword": "Qiari David Wong",
+    "secondary_keywords": ["David Wong founder", "Qi Coil to Qiari", "Qiari origin"],
+    "type": "pillar",
+    "target_word_count": 2000,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-007",
+    "title_hint": "The Complete Guide to Distance Frequency Therapy in 2026",
+    "primary_keyword": "distance frequency therapy",
+    "secondary_keywords": ["remote frequency sessions", "distance energy work", "Qiari"],
+    "type": "pillar",
+    "target_word_count": 2300,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-008",
+    "title_hint": "Personalized Frequency Sessions Online: The Full 2026 Guide",
+    "primary_keyword": "personalized frequency sessions online",
+    "secondary_keywords": ["custom frequency sessions", "online frequency wellness", "Qiari"],
+    "type": "pillar",
+    "target_word_count": 2200,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-009",
+    "title_hint": "Scalar Energy and Remote Wellness Apps: A Modern Primer",
+    "primary_keyword": "scalar energy app remote",
+    "secondary_keywords": ["scalar wellness app", "remote scalar sessions", "Qiari"],
+    "type": "pillar",
+    "target_word_count": 2100,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-010",
+    "title_hint": "Remote Energy Healing Apps: The Complete 2026 Landscape",
+    "primary_keyword": "remote energy healing app",
+    "secondary_keywords": ["energy wellness app", "remote energy sessions", "Qiari"],
+    "type": "pillar",
+    "target_word_count": 2300,
+    "status": "queued",
+    "priority": 3
+  },
+
+  {
+    "id": "qiari-011",
+    "title_hint": "Qiari vs QiEnergy.ai: Which Frequency Wellness App Fits You",
+    "primary_keyword": "Qiari vs QiEnergy",
+    "secondary_keywords": ["QiEnergy alternative", "Qiari comparison", "frequency wellness apps"],
+    "type": "comparison",
+    "target_word_count": 1700,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-012",
+    "title_hint": "Qiari vs Qi Coil: The App or the Device, Which Should You Start With",
+    "primary_keyword": "Qiari vs Qi Coil",
+    "secondary_keywords": ["Qi Coil alternative", "frequency app vs device", "Qiari Qi Coil"],
+    "type": "comparison",
+    "target_word_count": 1800,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-013",
+    "title_hint": "Qiari vs Generic Meditation Apps: A Frequency-First Comparison",
+    "primary_keyword": "Qiari vs meditation app",
+    "secondary_keywords": ["frequency vs meditation", "Qiari Calm Headspace", "wellness app comparison"],
+    "type": "comparison",
+    "target_word_count": 1700,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-014",
+    "title_hint": "Qiari Basic vs Core vs Ultra: How to Pick the Right Plan",
+    "primary_keyword": "Qiari pricing",
+    "secondary_keywords": ["Qiari plans", "Qiari Basic Core Ultra", "Qiari subscription"],
+    "type": "comparison",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-015",
+    "title_hint": "Remote Frequency Wellness vs In-Person Energy Work: An Honest Comparison",
+    "primary_keyword": "remote energy healing vs in-person",
+    "secondary_keywords": ["remote vs in-person energy", "distance healing comparison", "Qiari sessions"],
+    "type": "comparison",
+    "target_word_count": 1800,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-016",
+    "title_hint": "Qiari vs PEMF Apps: What's Actually Different",
+    "primary_keyword": "Qiari vs PEMF app",
+    "secondary_keywords": ["PEMF alternative app", "frequency wellness vs PEMF", "Qiari"],
+    "type": "comparison",
+    "target_word_count": 1700,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-017",
+    "title_hint": "Qiari Subscriber Tier vs Practitioner Tier: Which One Are You",
+    "primary_keyword": "Qiari practitioner tier",
+    "secondary_keywords": ["Qiari for practitioners", "Qiari subscriber vs pro", "Qiari plans"],
+    "type": "comparison",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-018",
+    "title_hint": "Qiari vs Spotify Sound Healing Playlists: Why the Format Matters",
+    "primary_keyword": "Qiari vs sound healing playlist",
+    "secondary_keywords": ["sound healing app comparison", "frequency vs Spotify", "Qiari"],
+    "type": "comparison",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-019",
+    "title_hint": "Qiari vs Solfeggio Frequency YouTube Videos: A Real Comparison",
+    "primary_keyword": "Qiari vs Solfeggio YouTube",
+    "secondary_keywords": ["Solfeggio app", "structured frequency sessions", "Qiari"],
+    "type": "comparison",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-020",
+    "title_hint": "DeepRest vs Qiari Subscription: When to Pick Which",
+    "primary_keyword": "DeepRest vs Qiari subscription",
+    "secondary_keywords": ["DeepRest one-time", "Qiari monthly", "Qiari product comparison"],
+    "type": "comparison",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-021",
+    "title_hint": "Qiari vs Quantum Torus: App Sessions vs Entry-Level Device",
+    "primary_keyword": "Qiari vs Quantum Torus",
+    "secondary_keywords": ["Quantum Torus alternative", "Qiari vs hardware", "frequency wellness path"],
+    "type": "comparison",
+    "target_word_count": 1700,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-022",
+    "title_hint": "Qiari for Travelers vs Bringing Hardware on the Road",
+    "primary_keyword": "frequency healing for travelers",
+    "secondary_keywords": ["travel wellness app", "Qiari on the road", "portable frequency wellness"],
+    "type": "comparison",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-023",
+    "title_hint": "Qiari vs Reiki Distance Sessions: What's the Same, What's Different",
+    "primary_keyword": "Qiari vs distance Reiki",
+    "secondary_keywords": ["distance Reiki app", "remote energy comparison", "Qiari sessions"],
+    "type": "comparison",
+    "target_word_count": 1600,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-024",
+    "title_hint": "Qiari Free Trial vs Paid Tier: What You Actually Get",
+    "primary_keyword": "Qiari free trial",
+    "secondary_keywords": ["try Qiari", "Qiari free vs paid", "Qiari signup"],
+    "type": "comparison",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-025",
+    "title_hint": "Subscription Frequency Apps vs One-Time Purchase Hardware: The Real Math",
+    "primary_keyword": "frequency healing subscription app",
+    "secondary_keywords": ["subscription vs hardware", "frequency wellness cost", "Qiari pricing"],
+    "type": "comparison",
+    "target_word_count": 1600,
+    "status": "queued",
+    "priority": 2
+  },
+
+  {
+    "id": "qiari-026",
+    "title_hint": "How Qiari Works: A Walkthrough of Your First Remote Frequency Session",
+    "primary_keyword": "how Qiari works",
+    "secondary_keywords": ["Qiari walkthrough", "first Qiari session", "Qiari app guide"],
+    "type": "howto",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-027",
+    "title_hint": "How to Choose Your First Qiari Session: A Practical Framework",
+    "primary_keyword": "how to choose Qiari session",
+    "secondary_keywords": ["Qiari intentions", "first session Qiari", "Qiari app tips"],
+    "type": "howto",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-028",
+    "title_hint": "How Remote Frequency Wellness Actually Works (in Plain English)",
+    "primary_keyword": "how does remote frequency wellness work",
+    "secondary_keywords": ["remote frequency mechanism", "how frequency apps work", "Qiari"],
+    "type": "howto",
+    "target_word_count": 1600,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-029",
+    "title_hint": "How to Build a Daily Qiari Practice in Under 15 Minutes",
+    "primary_keyword": "Qiari daily practice",
+    "secondary_keywords": ["Qiari routine", "daily frequency session", "wellness routine"],
+    "type": "howto",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-030",
+    "title_hint": "How to Set Effective Intentions for Frequency Wellness Sessions",
+    "primary_keyword": "frequency wellness intention setting",
+    "secondary_keywords": ["set intention Qiari", "session intentions", "wellness practice"],
+    "type": "howto",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-031",
+    "title_hint": "How to Use Qiari for Sleep: A Practical Guide",
+    "primary_keyword": "Qiari for sleep",
+    "secondary_keywords": ["frequency wellness sleep", "Qiari sleep sessions", "wind down practice"],
+    "type": "howto",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-032",
+    "title_hint": "How to Use Qiari for Focus and Deep Work",
+    "primary_keyword": "Qiari for focus",
+    "secondary_keywords": ["focus frequency", "deep work wellness", "Qiari sessions"],
+    "type": "howto",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-033",
+    "title_hint": "How to Use Qiari for Calm and Stress Wind-Down",
+    "primary_keyword": "Qiari for stress",
+    "secondary_keywords": ["calm frequency session", "stress wellness app", "Qiari"],
+    "type": "howto",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-034",
+    "title_hint": "How to Use Qiari for Energy and Morning Activation",
+    "primary_keyword": "Qiari for energy",
+    "secondary_keywords": ["morning frequency session", "energy wellness", "Qiari"],
+    "type": "howto",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-035",
+    "title_hint": "How to Pair Qiari Sessions With Meditation and Breathwork",
+    "primary_keyword": "Qiari with meditation",
+    "secondary_keywords": ["frequency and meditation", "Qiari breathwork", "stack wellness practices"],
+    "type": "howto",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-036",
+    "title_hint": "How to Track Results From a Qiari Practice (Without Overthinking It)",
+    "primary_keyword": "track Qiari results",
+    "secondary_keywords": ["frequency wellness journaling", "Qiari progress", "session tracking"],
+    "type": "howto",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-037",
+    "title_hint": "How to Sign Up for Qiari and Get the Most Out of Your First Week",
+    "primary_keyword": "Qiari signup",
+    "secondary_keywords": ["start Qiari", "Qiari first week", "new user guide"],
+    "type": "howto",
+    "target_word_count": 1300,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-038",
+    "title_hint": "How Qiari Personalizes Your Sessions: The AI Layer Explained",
+    "primary_keyword": "Qiari personalization",
+    "secondary_keywords": ["AI wellness personalization", "custom frequency sessions", "Qiari intentions"],
+    "type": "howto",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-039",
+    "title_hint": "How Practitioners Use Qiari With Clients (Without Hardware on Hand)",
+    "primary_keyword": "Qiari for practitioners",
+    "secondary_keywords": ["wellness practitioner app", "Qiari pro tier", "client sessions"],
+    "type": "howto",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-040",
+    "title_hint": "How to Combine Qiari With Existing Qi Coil Hardware",
+    "primary_keyword": "Qiari with Qi Coil",
+    "secondary_keywords": ["combine Qi Coil app", "Qiari hardware stack", "Qi ecosystem"],
+    "type": "howto",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-041",
+    "title_hint": "How Often Should You Run Qiari Sessions: A Cadence Guide",
+    "primary_keyword": "Qiari session frequency",
+    "secondary_keywords": ["how often Qiari", "session cadence", "wellness routine"],
+    "type": "howto",
+    "target_word_count": 1300,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-042",
+    "title_hint": "How to Get the Most From Qiari If You're New to Frequency Wellness",
+    "primary_keyword": "Qiari beginner guide",
+    "secondary_keywords": ["frequency wellness beginner", "new to Qiari", "first time wellness app"],
+    "type": "howto",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-043",
+    "title_hint": "How to Cancel or Switch Qiari Plans (Without Losing Your Progress)",
+    "primary_keyword": "Qiari plan change",
+    "secondary_keywords": ["Qiari cancel", "switch Qiari tier", "subscription help"],
+    "type": "howto",
+    "target_word_count": 1200,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-044",
+    "title_hint": "How to Use Qiari on Multiple Devices (Phone, Desktop, Tablet)",
+    "primary_keyword": "Qiari multiple devices",
+    "secondary_keywords": ["Qiari on desktop", "Qiari sync devices", "Qiari app guide"],
+    "type": "howto",
+    "target_word_count": 1300,
+    "status": "queued",
+    "priority": 3
+  },
+  {
+    "id": "qiari-045",
+    "title_hint": "How to Spot Real vs Fake Frequency Wellness Apps in 2026",
+    "primary_keyword": "real frequency wellness app",
+    "secondary_keywords": ["choose frequency app", "frequency app red flags", "Qiari"],
+    "type": "howto",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 3
+  },
+
+  {
+    "id": "qiari-046",
+    "title_hint": "Is Qiari Legit? An Honest Look at the Platform",
+    "primary_keyword": "is Qiari legit",
+    "secondary_keywords": ["Qiari review", "Qiari real", "Qiari trust"],
+    "type": "question",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-047",
+    "title_hint": "Can Frequency Healing Actually Work Remotely?",
+    "primary_keyword": "can frequency healing work remotely",
+    "secondary_keywords": ["does remote frequency work", "remote energy effective", "Qiari"],
+    "type": "question",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-048",
+    "title_hint": "What Is Remote Quantum Energy and Should You Try It",
+    "primary_keyword": "what is remote quantum energy",
+    "secondary_keywords": ["remote quantum energy explained", "quantum wellness apps", "Qiari"],
+    "type": "question",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-049",
+    "title_hint": "What's the Best Frequency Wellness App in 2026?",
+    "primary_keyword": "best frequency wellness app 2026",
+    "secondary_keywords": ["top frequency app", "frequency app review", "Qiari"],
+    "type": "question",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-050",
+    "title_hint": "How Much Does Qiari Cost in 2026?",
+    "primary_keyword": "Qiari cost",
+    "secondary_keywords": ["Qiari price", "Qiari subscription cost", "Qiari plans"],
+    "type": "question",
+    "target_word_count": 1300,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-051",
+    "title_hint": "Is Qiari the Same as Qi Coil?",
+    "primary_keyword": "Qiari vs Qi Coil same",
+    "secondary_keywords": ["Qiari Qi Coil relationship", "is Qiari Qi Coil", "Qi ecosystem"],
+    "type": "question",
+    "target_word_count": 1300,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-052",
+    "title_hint": "Do You Need Hardware to Use Qiari?",
+    "primary_keyword": "Qiari hardware required",
+    "secondary_keywords": ["Qiari device free", "Qiari no hardware", "Qiari setup"],
+    "type": "question",
+    "target_word_count": 1300,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-053",
+    "title_hint": "Who Founded Qiari?",
+    "primary_keyword": "who founded Qiari",
+    "secondary_keywords": ["David Wong Qiari", "Qiari founder", "Qiari company"],
+    "type": "question",
+    "target_word_count": 1200,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-054",
+    "title_hint": "Is Qiari Available Worldwide?",
+    "primary_keyword": "Qiari worldwide availability",
+    "secondary_keywords": ["Qiari international", "Qiari countries", "Qiari access"],
+    "type": "question",
+    "target_word_count": 1200,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-055",
+    "title_hint": "What Should Beginners Expect From Their First Qiari Week?",
+    "primary_keyword": "Qiari first week",
+    "secondary_keywords": ["beginner Qiari", "what to expect Qiari", "first sessions"],
+    "type": "question",
+    "target_word_count": 1300,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-056",
+    "title_hint": "Is Qiari Safe to Use Daily?",
+    "primary_keyword": "is Qiari safe",
+    "secondary_keywords": ["Qiari safety", "daily Qiari sessions", "frequency wellness safety"],
+    "type": "question",
+    "target_word_count": 1300,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-057",
+    "title_hint": "Does Qiari Work for Sleep, Focus, or Stress Specifically?",
+    "primary_keyword": "does Qiari work for sleep focus stress",
+    "secondary_keywords": ["Qiari use cases", "Qiari intentions", "what Qiari does"],
+    "type": "question",
+    "target_word_count": 1500,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-058",
+    "title_hint": "Is Qiari a Good Alternative to Buying a Qi Coil?",
+    "primary_keyword": "Qi Coil alternative",
+    "secondary_keywords": ["app like Qi Coil", "Qiari instead of Qi Coil", "frequency without device"],
+    "type": "question",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 1
+  },
+  {
+    "id": "qiari-059",
+    "title_hint": "What Makes Qiari Different From Other Wellness Apps?",
+    "primary_keyword": "what makes Qiari different",
+    "secondary_keywords": ["Qiari unique", "Qiari vs wellness apps", "Qiari positioning"],
+    "type": "question",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 2
+  },
+  {
+    "id": "qiari-060",
+    "title_hint": "Will Qiari Replace In-Person Energy Practitioners?",
+    "primary_keyword": "Qiari replace practitioners",
+    "secondary_keywords": ["app vs practitioner", "remote vs in-person wellness", "Qiari practitioners"],
+    "type": "question",
+    "target_word_count": 1400,
+    "status": "queued",
+    "priority": 3
+  }
+]
