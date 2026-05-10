@@ -9,7 +9,7 @@ topic_id: "qiari-001"
 image_prompt: "Abstract visualization of gentle frequency waves or vibrations emanating from a smartphone screen, with soft blue and purple light, no people or logos visible."
 internal_link_count: 11
 generation_cost_cents: 128
-status: "pending_review"
+status: "published"
 ---
 
 # What is Qiari.ai? A Complete Guide to Remote Frequency Wellness in 2026

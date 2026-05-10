@@ -46,7 +46,9 @@ async function publishSite(siteSlug) {
       console.error(`[${siteSlug}] #${a.id} draft file missing — skipping`);
       continue;
     }
-    const content = fs.readFileSync(a.draft_path, "utf8");
+    const rawContent = fs.readFileSync(a.draft_path, "utf8");
+    // Flip frontmatter status to "published" so the consuming site treats it as live.
+    const content = rawContent.replace(/^(status:\s*)"(?:pending_review|approved|draft)"/m, '$1"published"');
     const targetPath = `${targetDir.replace(/\/$/, "")}/${a.slug}.md`;
     const message = `autoblog: publish "${a.title}" (article #${a.id})`;
     try {
