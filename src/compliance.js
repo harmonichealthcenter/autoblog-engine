@@ -7,6 +7,38 @@
 //  - "flag_for_human": regex strings whose matches surface as warnings (don't block, but get listed
 //    in the draft frontmatter and the Slack message so the human reviewer can verify).
 
+// A match is "in a denial context" if the surrounding window contains a clear
+// negation. This lets Stream A articles legitimately quote the FDA disclaimer
+// ("not intended to ... cure ...") and discuss "not FDA approved" without
+// tripping the gate. We check a window of 40 chars BEFORE the match (and 80
+// chars after, for the "do not claim cures" pattern where the negation precedes
+// the verb that precedes the forbidden noun).
+const NEGATION_TOKENS = [
+  /\bnot\b/i,
+  /\bno\b/i,
+  /\bnever\b/i,
+  /\bwithout\b/i,
+  /\bdoesn'?t\b/i,
+  /\bdon'?t\b/i,
+  /\bisn'?t\b/i,
+  /\baren'?t\b/i,
+  /\bwon'?t\b/i,
+  /\bcannot\b/i,
+  /\bcan'?t\b/i,
+  /\bnone\b/i,
+  /\bnor\b/i,
+  /\b(?:do|does|did)\s+not\b/i,
+  /\bnot\s+intended\s+to\b/i,
+  /\bnot\s+(?:FDA|approved)\b/i,
+];
+
+function isInDenialContext(text, matchIndex, matchLength) {
+  const windowStart = Math.max(0, matchIndex - 60);
+  const windowEnd = Math.min(text.length, matchIndex + matchLength + 30);
+  const window = text.slice(windowStart, windowEnd);
+  return NEGATION_TOKENS.some((re) => re.test(window));
+}
+
 export function checkCompliance(text, site) {
   const cfg = site?.config?.compliance;
   if (!cfg || cfg.enabled === false) {
@@ -16,22 +48,27 @@ export function checkCompliance(text, site) {
   const blocking = [];
   const flags = [];
 
-  // Forbidden regex patterns
+  // Forbidden regex patterns. Skip matches in denial context (negated claims).
   for (const pattern of cfg.forbidden_patterns || []) {
     let re;
     try {
-      re = new RegExp(pattern, "i");
+      re = new RegExp(pattern, "ig");
     } catch (e) {
       blocking.push({ rule: "forbidden_patterns", pattern, error: `bad regex: ${e.message}` });
       continue;
     }
-    const m = text.match(re);
-    if (m) {
-      blocking.push({ rule: "forbidden_patterns", pattern, match: m[0].slice(0, 80) });
+    let firstClaimMatch = null;
+    for (const m of text.matchAll(re)) {
+      if (isInDenialContext(text, m.index, m[0].length)) continue;
+      firstClaimMatch = m;
+      break;
+    }
+    if (firstClaimMatch) {
+      blocking.push({ rule: "forbidden_patterns", pattern, match: firstClaimMatch[0].slice(0, 80) });
     }
   }
 
-  // Disclaimer requirement
+  // Disclaimer requirement (uses ORIGINAL text — the disclaimer should literally be present)
   const triggers = cfg.disclaimer_required_when_mentions || [];
   const required = cfg.required_disclaimer;
   if (required && triggers.length) {

@@ -16,6 +16,7 @@
     "review:reject": "node src/review.js reject",
     "review:edit": "node src/review.js edit",
     "publish": "node src/publish.js",
+    "backfill:images": "node src/backfill-images.js",
     "topics:add": "node src/topics.js add",
     "topics:list": "node src/topics.js list"
   },

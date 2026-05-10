@@ -7,6 +7,7 @@ import { fetchSitemapUrls } from "./sitemap.js";
 import { insertArticle, updateArticle, getArticleBySlug } from "./db.js";
 import { notify } from "./slack.js";
 import { checkCompliance, summarizeCompliance } from "./compliance.js";
+import { generateImage, imageAltFromPrompt } from "./images.js";
 
 function slugify(s) {
   return s
@@ -165,7 +166,7 @@ function wordCount(text) {
   return text.trim().split(/\s+/).length;
 }
 
-function buildFrontmatter({ meta, topic, internalLinkCount, costCents, compliance, status }) {
+function buildFrontmatter({ meta, topic, internalLinkCount, costCents, compliance, status, image, site }) {
   const complianceLine =
     compliance && compliance.enabled
       ? `compliance_status: "${compliance.blocking.length ? "failed" : compliance.flags.length ? "flagged" : "clean"}"
@@ -173,16 +174,28 @@ compliance_summary: ${JSON.stringify(summarizeCompliance(compliance))}
 `
       : "";
   const streamLine = topic.stream ? `stream: "${topic.stream}"\n` : "";
+  const slug = meta.slug || slugify(meta.title || topic.title_hint);
+  const canonical = site?.config?.site_url
+    ? `${site.config.site_url.replace(/\/$/, "")}/blog/${slug}`
+    : "";
+  const imageBlock = image
+    ? `image: "${image.relativePath}"
+image_alt: "${(image.alt || "").replace(/"/g, '\\"')}"
+og_image: "${image.relativePath}"
+twitter_card: "summary_large_image"
+`
+    : "";
+  const canonicalLine = canonical ? `canonical_url: "${canonical}"\n` : "";
   return `---
 title: "${(meta.title || topic.title_hint).replace(/"/g, '\\"')}"
-slug: "${meta.slug || slugify(meta.title || topic.title_hint)}"
+slug: "${slug}"
 meta_description: "${(meta.meta_description || "").replace(/"/g, '\\"')}"
 primary_keyword: "${topic.primary_keyword}"
 secondary_keywords: ${JSON.stringify(topic.secondary_keywords || [])}
 type: "${topic.type}"
 ${streamLine}topic_id: "${topic.id}"
-image_prompt: "${(meta.image_prompt || "").replace(/"/g, '\\"')}"
-internal_link_count: ${internalLinkCount}
+${canonicalLine}image_prompt: "${(meta.image_prompt || "").replace(/"/g, '\\"')}"
+${imageBlock}internal_link_count: ${internalLinkCount}
 generation_cost_cents: ${costCents}
 ${complianceLine}status: "${status || "pending_review"}"
 ---
@@ -270,6 +283,30 @@ export async function generateOne(siteSlug) {
   fs.mkdirSync(draftDir, { recursive: true });
   const draftPath = path.join(draftDir, filename);
 
+  // Image generation (skipped on compliance failure to avoid wasting spend)
+  let image = null;
+  if (!complianceFailed && process.env.REPLICATE_API_TOKEN && meta.parsed.image_prompt) {
+    try {
+      const imagesDir = path.join(draftDir, "images");
+      const imageFile = `${slug}.png`;
+      const imageAbsPath = path.join(imagesDir, imageFile);
+      const result = await generateImage({
+        prompt: meta.parsed.image_prompt,
+        outPath: imageAbsPath,
+      });
+      totalCost += result.costCents;
+      image = {
+        absPath: imageAbsPath,
+        relativePath: `images/${imageFile}`,
+        alt: imageAltFromPrompt(meta.parsed.image_prompt, meta.parsed.title || topic.title_hint),
+      };
+      console.log(`[${siteSlug}] image generated: ${imageAbsPath} (${(result.sizeBytes / 1024).toFixed(0)}kb)`);
+    } catch (e) {
+      console.error(`[${siteSlug}] image generation failed: ${e.message}`);
+      await notify(`⚠️ Image generation failed for ${siteSlug} draft: ${e.message}`);
+    }
+  }
+
   const internalLinkCount = (finalText.match(new RegExp(`\\]\\(https?://[^)]*${site.config.site_domain.replace(/\./g, "\\.")}`, "g")) || []).length;
 
   const status = complianceFailed ? "compliance_failed" : "pending_review";
@@ -280,6 +317,8 @@ export async function generateOne(siteSlug) {
     costCents: totalCost,
     compliance,
     status,
+    image,
+    site,
   });
 
   fs.writeFileSync(draftPath, frontmatter + finalText + "\n");

@@ -5,11 +5,20 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "is qi coil a scam",
-    "secondary_keywords": ["qi coil review", "qi coil legit", "qi coil customer reviews"],
-    "must_include": ["FDA disclaimer", "30-day guarantee mention", "honest acknowledgment of skepticism"],
+    "secondary_keywords": [
+      "qi coil review",
+      "qi coil legit",
+      "qi coil customer reviews"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "30-day guarantee mention",
+      "honest acknowledgment of skepticism"
+    ],
     "target_word_count": 2200,
-    "status": "queued",
-    "priority": 1
+    "status": "drafted",
+    "priority": 1,
+    "last_draft_id": 2
   },
   {
     "id": "qicoil-002",
@@ -17,8 +26,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil review",
-    "secondary_keywords": ["qi coil honest review", "qi coil 2026", "qi coil user experience"],
-    "must_include": ["FDA disclaimer", "specific use scenarios", "real reviewer quote if corpus available"],
+    "secondary_keywords": [
+      "qi coil honest review",
+      "qi coil 2026",
+      "qi coil user experience"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "specific use scenarios",
+      "real reviewer quote if corpus available"
+    ],
     "target_word_count": 2200,
     "status": "queued",
     "priority": 1
@@ -29,8 +46,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "does qi coil work",
-    "secondary_keywords": ["qi coil results", "qi coil effectiveness", "qi coil user reports"],
-    "must_include": ["FDA disclaimer", "experiential framing only", "no health claims"],
+    "secondary_keywords": [
+      "qi coil results",
+      "qi coil effectiveness",
+      "qi coil user reports"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "experiential framing only",
+      "no health claims"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 1
@@ -41,8 +66,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil vs rife machine",
-    "secondary_keywords": ["qi coil vs rife", "rife vs qi coil", "frequency device comparison"],
-    "must_include": ["FDA disclaimer", "history of both devices", "honest pros and cons"],
+    "secondary_keywords": [
+      "qi coil vs rife",
+      "rife vs qi coil",
+      "frequency device comparison"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "history of both devices",
+      "honest pros and cons"
+    ],
     "target_word_count": 2200,
     "status": "queued",
     "priority": 1
@@ -53,8 +86,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil customer reviews",
-    "secondary_keywords": ["qi coil trustpilot", "qi coil reviews 2026", "qilifestore reviews"],
-    "must_include": ["FDA disclaimer", "real Trustpilot quotes if available", "address negative reviews"],
+    "secondary_keywords": [
+      "qi coil trustpilot",
+      "qi coil reviews 2026",
+      "qilifestore reviews"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "real Trustpilot quotes if available",
+      "address negative reviews"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 1
@@ -65,8 +106,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil refund",
-    "secondary_keywords": ["qi coil money back", "qi coil guarantee", "qi coil return policy"],
-    "must_include": ["link to guarantee subdomain", "exact refund window", "no marketing fluff"],
+    "secondary_keywords": [
+      "qi coil money back",
+      "qi coil guarantee",
+      "qi coil return policy"
+    ],
+    "must_include": [
+      "link to guarantee subdomain",
+      "exact refund window",
+      "no marketing fluff"
+    ],
     "target_word_count": 1800,
     "status": "queued",
     "priority": 1
@@ -77,8 +126,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil before and after",
-    "secondary_keywords": ["qi coil results", "qi coil testimonials", "qi coil experience"],
-    "must_include": ["FDA disclaimer", "experiential language", "no transformation claims"],
+    "secondary_keywords": [
+      "qi coil results",
+      "qi coil testimonials",
+      "qi coil experience"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "experiential language",
+      "no transformation claims"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 1
@@ -89,8 +146,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil disclaimer",
-    "secondary_keywords": ["qi coil fda", "qi coil legal", "qi coil regulatory"],
-    "must_include": ["full disclaimer verbatim", "FTC context", "what the disclaimer means in practice"],
+    "secondary_keywords": [
+      "qi coil fda",
+      "qi coil legal",
+      "qi coil regulatory"
+    ],
+    "must_include": [
+      "full disclaimer verbatim",
+      "FTC context",
+      "what the disclaimer means in practice"
+    ],
     "target_word_count": 1700,
     "status": "queued",
     "priority": 1
@@ -101,8 +166,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil vs spooky2",
-    "secondary_keywords": ["spooky2 vs qi coil", "frequency device comparison", "rife alternative"],
-    "must_include": ["FDA disclaimer", "fair treatment of both", "no smearing competitors"],
+    "secondary_keywords": [
+      "spooky2 vs qi coil",
+      "frequency device comparison",
+      "rife alternative"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "fair treatment of both",
+      "no smearing competitors"
+    ],
     "target_word_count": 2100,
     "status": "queued",
     "priority": 1
@@ -113,8 +186,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil complaints",
-    "secondary_keywords": ["qi coil bad reviews", "qi coil problems", "qi coil issues"],
-    "must_include": ["FDA disclaimer", "no defensive tone", "engage with each criticism"],
+    "secondary_keywords": [
+      "qi coil bad reviews",
+      "qi coil problems",
+      "qi coil issues"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "no defensive tone",
+      "engage with each criticism"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 1
@@ -125,8 +206,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil legit",
-    "secondary_keywords": ["is qi coil real", "qi coil legitimate", "qi coil scam or real"],
-    "must_include": ["FDA disclaimer", "transparent framing", "company background"],
+    "secondary_keywords": [
+      "is qi coil real",
+      "qi coil legitimate",
+      "qi coil scam or real"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "transparent framing",
+      "company background"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 1
@@ -137,8 +226,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi life store reviews",
-    "secondary_keywords": ["qilifestore reviews", "qi life trustpilot", "qicoil store reviews"],
-    "must_include": ["FDA disclaimer", "Trustpilot star context", "specific reviewer voices"],
+    "secondary_keywords": [
+      "qilifestore reviews",
+      "qi life trustpilot",
+      "qicoil store reviews"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "Trustpilot star context",
+      "specific reviewer voices"
+    ],
     "target_word_count": 1800,
     "status": "queued",
     "priority": 1
@@ -149,8 +246,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil side effects",
-    "secondary_keywords": ["qi coil contraindications", "qi coil safety", "qi coil precautions"],
-    "must_include": ["FDA disclaimer", "consult-physician note", "experiential framing"],
+    "secondary_keywords": [
+      "qi coil contraindications",
+      "qi coil safety",
+      "qi coil precautions"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "consult-physician note",
+      "experiential framing"
+    ],
     "target_word_count": 1800,
     "status": "queued",
     "priority": 1
@@ -161,8 +266,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil guarantee",
-    "secondary_keywords": ["qi coil 30 day", "qi coil return", "qi coil warranty"],
-    "must_include": ["link to guarantee subdomain", "exact terms", "no marketing fluff"],
+    "secondary_keywords": [
+      "qi coil 30 day",
+      "qi coil return",
+      "qi coil warranty"
+    ],
+    "must_include": [
+      "link to guarantee subdomain",
+      "exact terms",
+      "no marketing fluff"
+    ],
     "target_word_count": 1700,
     "status": "queued",
     "priority": 1
@@ -173,8 +286,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil yin and yang review",
-    "secondary_keywords": ["qi coil yin yang", "qi coil entry level", "qi coil starter"],
-    "must_include": ["FDA disclaimer", "what's in the box", "honest pros and cons"],
+    "secondary_keywords": [
+      "qi coil yin yang",
+      "qi coil entry level",
+      "qi coil starter"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "what's in the box",
+      "honest pros and cons"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 1
@@ -185,8 +306,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil max review",
-    "secondary_keywords": ["qi coil max", "resonant console 3", "qi coil full system"],
-    "must_include": ["FDA disclaimer", "Resonant Console 3 detail", "honest pricing context"],
+    "secondary_keywords": [
+      "qi coil max",
+      "resonant console 3",
+      "qi coil full system"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "Resonant Console 3 detail",
+      "honest pricing context"
+    ],
     "target_word_count": 2200,
     "status": "queued",
     "priority": 1
@@ -197,8 +326,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil price",
-    "secondary_keywords": ["qi coil cost", "qi coil 2026 price", "qi coil tiers"],
-    "must_include": ["FDA disclaimer", "tier comparison", "value framing not sales"],
+    "secondary_keywords": [
+      "qi coil cost",
+      "qi coil 2026 price",
+      "qi coil tiers"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "tier comparison",
+      "value framing not sales"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 1
@@ -209,8 +346,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil fda",
-    "secondary_keywords": ["qi coil fda approved", "is qi coil fda", "qi coil regulatory status"],
-    "must_include": ["full disclaimer verbatim", "FTC and FDA context", "what wellness device means"],
+    "secondary_keywords": [
+      "qi coil fda approved",
+      "is qi coil fda",
+      "qi coil regulatory status"
+    ],
+    "must_include": [
+      "full disclaimer verbatim",
+      "FTC and FDA context",
+      "what wellness device means"
+    ],
     "target_word_count": 1700,
     "status": "queued",
     "priority": 1
@@ -221,8 +366,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil reddit",
-    "secondary_keywords": ["qi coil reddit reviews", "reddit qi coil", "qi coil discussion"],
-    "must_include": ["FDA disclaimer", "honest summary of mixed sentiment", "no defensive tone"],
+    "secondary_keywords": [
+      "qi coil reddit reviews",
+      "reddit qi coil",
+      "qi coil discussion"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "honest summary of mixed sentiment",
+      "no defensive tone"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 1
@@ -233,8 +386,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil quora",
-    "secondary_keywords": ["qi coil quora answers", "qi coil scam quora", "quora qi coil"],
-    "must_include": ["FDA disclaimer", "engage the scam thread directly", "transparent framing"],
+    "secondary_keywords": [
+      "qi coil quora answers",
+      "qi coil scam quora",
+      "quora qi coil"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "engage the scam thread directly",
+      "transparent framing"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 1
@@ -245,8 +406,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil warranty",
-    "secondary_keywords": ["qi coil hardware warranty", "qi coil coverage", "qi coil repair"],
-    "must_include": ["link to guarantee subdomain", "exact warranty terms", "no marketing fluff"],
+    "secondary_keywords": [
+      "qi coil hardware warranty",
+      "qi coil coverage",
+      "qi coil repair"
+    ],
+    "must_include": [
+      "link to guarantee subdomain",
+      "exact warranty terms",
+      "no marketing fluff"
+    ],
     "target_word_count": 1600,
     "status": "queued",
     "priority": 1
@@ -257,8 +426,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil customer service",
-    "secondary_keywords": ["qi coil support", "qi coil contact", "qi coil help"],
-    "must_include": ["onboarding subdomain link if relevant", "honest about response times", "no fluff"],
+    "secondary_keywords": [
+      "qi coil support",
+      "qi coil contact",
+      "qi coil help"
+    ],
+    "must_include": [
+      "onboarding subdomain link if relevant",
+      "honest about response times",
+      "no fluff"
+    ],
     "target_word_count": 1700,
     "status": "queued",
     "priority": 1
@@ -269,8 +446,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "mixed qi coil reviews",
-    "secondary_keywords": ["qi coil review variation", "qi coil polarized reviews", "why qi coil reviews vary"],
-    "must_include": ["FDA disclaimer", "honest about variance", "what makes wellness reviews vary"],
+    "secondary_keywords": [
+      "qi coil review variation",
+      "qi coil polarized reviews",
+      "why qi coil reviews vary"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "honest about variance",
+      "what makes wellness reviews vary"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 1
@@ -281,8 +466,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil wellness device",
-    "secondary_keywords": ["qi coil not medical", "qi coil category", "wellness device meaning"],
-    "must_include": ["full disclaimer verbatim", "regulatory category explanation", "transparent framing"],
+    "secondary_keywords": [
+      "qi coil not medical",
+      "qi coil category",
+      "wellness device meaning"
+    ],
+    "must_include": [
+      "full disclaimer verbatim",
+      "regulatory category explanation",
+      "transparent framing"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 1
@@ -293,8 +486,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil compared",
-    "secondary_keywords": ["qi coil vs pemf mat", "qi coil vs red light", "wellness device comparison"],
-    "must_include": ["FDA disclaimer", "fair treatment of competitors", "honest tradeoffs"],
+    "secondary_keywords": [
+      "qi coil vs pemf mat",
+      "qi coil vs red light",
+      "wellness device comparison"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "fair treatment of competitors",
+      "honest tradeoffs"
+    ],
     "target_word_count": 2200,
     "status": "queued",
     "priority": 1
@@ -305,8 +506,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil 30 day trial",
-    "secondary_keywords": ["qi coil trial period", "qi coil try before", "qi coil 30 days"],
-    "must_include": ["link to guarantee subdomain", "what happens if returned", "honest about logistics"],
+    "secondary_keywords": [
+      "qi coil trial period",
+      "qi coil try before",
+      "qi coil 30 days"
+    ],
+    "must_include": [
+      "link to guarantee subdomain",
+      "what happens if returned",
+      "honest about logistics"
+    ],
     "target_word_count": 1700,
     "status": "queued",
     "priority": 1
@@ -317,8 +526,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil skeptic",
-    "secondary_keywords": ["skeptical qi coil review", "qi coil 90 days", "qi coil long term"],
-    "must_include": ["FDA disclaimer", "experiential narrative", "no overclaiming"],
+    "secondary_keywords": [
+      "skeptical qi coil review",
+      "qi coil 90 days",
+      "qi coil long term"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "experiential narrative",
+      "no overclaiming"
+    ],
     "target_word_count": 2200,
     "status": "queued",
     "priority": 1
@@ -329,8 +546,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil negative reviews",
-    "secondary_keywords": ["qi coil bad reviews", "qi coil one star", "qi coil critics"],
-    "must_include": ["FDA disclaimer", "engage criticism honestly", "no dismissal"],
+    "secondary_keywords": [
+      "qi coil bad reviews",
+      "qi coil one star",
+      "qi coil critics"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "engage criticism honestly",
+      "no dismissal"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 1
@@ -341,8 +566,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil practitioner",
-    "secondary_keywords": ["qi coil professional", "qi coil practitioner use", "qi coil wellness pro"],
-    "must_include": ["FDA disclaimer", "specific use cases", "experiential language"],
+    "secondary_keywords": [
+      "qi coil professional",
+      "qi coil practitioner use",
+      "qi coil wellness pro"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "specific use cases",
+      "experiential language"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 1
@@ -353,8 +586,16 @@
     "stream": "A",
     "type": "reputation",
     "primary_keyword": "qi coil for beginners",
-    "secondary_keywords": ["qi coil starter guide", "qi coil first time", "qi coil beginner"],
-    "must_include": ["FDA disclaimer", "onboarding subdomain link", "realistic expectations"],
+    "secondary_keywords": [
+      "qi coil starter guide",
+      "qi coil first time",
+      "qi coil beginner"
+    ],
+    "must_include": [
+      "FDA disclaimer",
+      "onboarding subdomain link",
+      "realistic expectations"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 1
@@ -365,7 +606,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "biohacking sleep",
-    "secondary_keywords": ["sleep optimization", "sleep biohacks", "deep sleep protocol"],
+    "secondary_keywords": [
+      "sleep optimization",
+      "sleep biohacks",
+      "deep sleep protocol"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -376,7 +621,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "biohacking focus",
-    "secondary_keywords": ["focus stack", "deep work biohack", "sustained focus"],
+    "secondary_keywords": [
+      "focus stack",
+      "deep work biohack",
+      "sustained focus"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -387,7 +636,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "recovery protocols",
-    "secondary_keywords": ["athletic recovery", "biohacker recovery", "post workout protocol"],
+    "secondary_keywords": [
+      "athletic recovery",
+      "biohacker recovery",
+      "post workout protocol"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -398,7 +651,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "cold exposure benefits",
-    "secondary_keywords": ["cold plunge", "ice bath", "cold therapy biohacking"],
+    "secondary_keywords": [
+      "cold plunge",
+      "ice bath",
+      "cold therapy biohacking"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -409,7 +666,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "red light therapy at home",
-    "secondary_keywords": ["red light biohacking", "home red light", "photobiomodulation"],
+    "secondary_keywords": [
+      "red light biohacking",
+      "home red light",
+      "photobiomodulation"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -420,7 +681,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "mineral deficiency symptoms",
-    "secondary_keywords": ["magnesium deficiency", "mineral biohacking", "electrolyte balance"],
+    "secondary_keywords": [
+      "magnesium deficiency",
+      "mineral biohacking",
+      "electrolyte balance"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -431,7 +696,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "longevity stack",
-    "secondary_keywords": ["longevity supplements", "anti aging biohacking", "longevity protocol"],
+    "secondary_keywords": [
+      "longevity supplements",
+      "anti aging biohacking",
+      "longevity protocol"
+    ],
     "target_word_count": 2100,
     "status": "queued",
     "priority": 2
@@ -442,7 +711,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "nighttime routine biohackers",
-    "secondary_keywords": ["evening biohack", "wind down protocol", "sleep prep"],
+    "secondary_keywords": [
+      "evening biohack",
+      "wind down protocol",
+      "sleep prep"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -453,7 +726,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "magnesium types compared",
-    "secondary_keywords": ["magnesium glycinate", "magnesium threonate", "best magnesium form"],
+    "secondary_keywords": [
+      "magnesium glycinate",
+      "magnesium threonate",
+      "best magnesium form"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -464,7 +741,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "dopamine reset",
-    "secondary_keywords": ["dopamine fast", "dopamine detox", "dopamine biohacking"],
+    "secondary_keywords": [
+      "dopamine fast",
+      "dopamine detox",
+      "dopamine biohacking"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -475,7 +756,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "vagus nerve stimulation",
-    "secondary_keywords": ["vagus nerve exercises", "polyvagal", "nervous system biohacking"],
+    "secondary_keywords": [
+      "vagus nerve exercises",
+      "polyvagal",
+      "nervous system biohacking"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -486,7 +771,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "breath work for stress",
-    "secondary_keywords": ["breathing techniques", "box breathing", "physiological sigh"],
+    "secondary_keywords": [
+      "breathing techniques",
+      "box breathing",
+      "physiological sigh"
+    ],
     "target_word_count": 1800,
     "status": "queued",
     "priority": 2
@@ -497,7 +786,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "biohacking morning routine",
-    "secondary_keywords": ["morning biohacks", "wake up protocol", "morning stack"],
+    "secondary_keywords": [
+      "morning biohacks",
+      "wake up protocol",
+      "morning stack"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -508,7 +801,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "tracking HRV",
-    "secondary_keywords": ["hrv biohacking", "heart rate variability", "improve hrv"],
+    "secondary_keywords": [
+      "hrv biohacking",
+      "heart rate variability",
+      "improve hrv"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -519,7 +816,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "circadian rhythm reset",
-    "secondary_keywords": ["fix sleep schedule", "circadian biohacking", "light exposure protocol"],
+    "secondary_keywords": [
+      "fix sleep schedule",
+      "circadian biohacking",
+      "light exposure protocol"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -530,7 +831,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "nootropics for focus",
-    "secondary_keywords": ["best nootropics", "focus supplements", "nootropic stack"],
+    "secondary_keywords": [
+      "best nootropics",
+      "focus supplements",
+      "nootropic stack"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -541,7 +846,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "fasting protocols",
-    "secondary_keywords": ["intermittent fasting", "fasting biohacking", "extended fast"],
+    "secondary_keywords": [
+      "intermittent fasting",
+      "fasting biohacking",
+      "extended fast"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -552,7 +861,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "grounding earthing",
-    "secondary_keywords": ["earthing benefits", "grounding research", "barefoot grounding"],
+    "secondary_keywords": [
+      "earthing benefits",
+      "grounding research",
+      "barefoot grounding"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -563,7 +876,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "sauna benefits",
-    "secondary_keywords": ["infrared sauna", "sauna biohacking", "sauna longevity"],
+    "secondary_keywords": [
+      "infrared sauna",
+      "sauna biohacking",
+      "sauna longevity"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -574,7 +891,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "blue light blocking",
-    "secondary_keywords": ["blue light glasses", "screen filters", "blue light sleep"],
+    "secondary_keywords": [
+      "blue light glasses",
+      "screen filters",
+      "blue light sleep"
+    ],
     "target_word_count": 1800,
     "status": "queued",
     "priority": 2
@@ -585,7 +906,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "biohacking immunity",
-    "secondary_keywords": ["immune biohacks", "immune system optimization", "immunity stack"],
+    "secondary_keywords": [
+      "immune biohacks",
+      "immune system optimization",
+      "immunity stack"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -596,7 +921,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "biohacking testosterone",
-    "secondary_keywords": ["natural testosterone", "testosterone optimization", "men's biohacking"],
+    "secondary_keywords": [
+      "natural testosterone",
+      "testosterone optimization",
+      "men's biohacking"
+    ],
     "target_word_count": 2100,
     "status": "queued",
     "priority": 2
@@ -607,7 +936,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "biohacking energy levels",
-    "secondary_keywords": ["sustained energy", "energy biohacks", "fix afternoon crash"],
+    "secondary_keywords": [
+      "sustained energy",
+      "energy biohacks",
+      "fix afternoon crash"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -618,7 +951,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "biohacking anxiety",
-    "secondary_keywords": ["anxiety biohacks", "calm nervous system", "anxiety protocol"],
+    "secondary_keywords": [
+      "anxiety biohacks",
+      "calm nervous system",
+      "anxiety protocol"
+    ],
     "target_word_count": 2000,
     "status": "queued",
     "priority": 2
@@ -629,7 +966,11 @@
     "stream": "B",
     "type": "biohacking",
     "primary_keyword": "biohacking creative output",
-    "secondary_keywords": ["creativity biohacks", "creative focus", "flow state protocol"],
+    "secondary_keywords": [
+      "creativity biohacks",
+      "creative focus",
+      "flow state protocol"
+    ],
     "target_word_count": 1900,
     "status": "queued",
     "priority": 2
@@ -640,7 +981,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "what is pemf therapy",
-    "secondary_keywords": ["pemf explained", "pulsed electromagnetic field", "pemf basics"],
+    "secondary_keywords": [
+      "pemf explained",
+      "pulsed electromagnetic field",
+      "pemf basics"
+    ],
     "target_word_count": 2500,
     "status": "queued",
     "priority": 3
@@ -651,7 +996,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "pemf benefits research",
-    "secondary_keywords": ["pemf evidence", "pemf studies", "pemf clinical research"],
+    "secondary_keywords": [
+      "pemf evidence",
+      "pemf studies",
+      "pemf clinical research"
+    ],
     "target_word_count": 2400,
     "status": "queued",
     "priority": 3
@@ -662,7 +1011,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "royal rife history",
-    "secondary_keywords": ["royal rife biography", "rife machine origin", "rife frequency history"],
+    "secondary_keywords": [
+      "royal rife biography",
+      "rife machine origin",
+      "rife frequency history"
+    ],
     "target_word_count": 2400,
     "status": "queued",
     "priority": 3
@@ -673,7 +1026,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "rife frequency list",
-    "secondary_keywords": ["rife frequencies", "rife codes", "mortal oscillatory rate"],
+    "secondary_keywords": [
+      "rife frequencies",
+      "rife codes",
+      "mortal oscillatory rate"
+    ],
     "target_word_count": 2300,
     "status": "queued",
     "priority": 3
@@ -684,7 +1041,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "scalar wave explained",
-    "secondary_keywords": ["scalar waves", "scalar energy", "tesla scalar"],
+    "secondary_keywords": [
+      "scalar waves",
+      "scalar energy",
+      "tesla scalar"
+    ],
     "target_word_count": 2400,
     "status": "queued",
     "priority": 3
@@ -695,7 +1056,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "solfeggio frequencies meaning",
-    "secondary_keywords": ["solfeggio scale", "solfeggio history", "528 hz solfeggio"],
+    "secondary_keywords": [
+      "solfeggio scale",
+      "solfeggio history",
+      "528 hz solfeggio"
+    ],
     "target_word_count": 2300,
     "status": "queued",
     "priority": 3
@@ -706,7 +1071,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "schumann resonance health",
-    "secondary_keywords": ["schumann frequency", "earth resonance", "7.83 hz"],
+    "secondary_keywords": [
+      "schumann frequency",
+      "earth resonance",
+      "7.83 hz"
+    ],
     "target_word_count": 2300,
     "status": "queued",
     "priority": 3
@@ -717,7 +1086,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "bioelectromagnetics introduction",
-    "secondary_keywords": ["bioelectromagnetics field", "biofield science", "electromagnetic biology"],
+    "secondary_keywords": [
+      "bioelectromagnetics field",
+      "biofield science",
+      "electromagnetic biology"
+    ],
     "target_word_count": 2400,
     "status": "queued",
     "priority": 3
@@ -728,7 +1101,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "frequency therapy explained",
-    "secondary_keywords": ["frequency healing", "vibrational therapy", "frequency wellness"],
+    "secondary_keywords": [
+      "frequency healing",
+      "vibrational therapy",
+      "frequency wellness"
+    ],
     "target_word_count": 2300,
     "status": "queued",
     "priority": 3
@@ -739,7 +1116,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "pemf vs tens",
-    "secondary_keywords": ["pemf or tens", "tens unit comparison", "electrotherapy comparison"],
+    "secondary_keywords": [
+      "pemf or tens",
+      "tens unit comparison",
+      "electrotherapy comparison"
+    ],
     "target_word_count": 2200,
     "status": "queued",
     "priority": 3
@@ -750,7 +1131,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "nikola tesla frequency",
-    "secondary_keywords": ["tesla frequency healing", "tesla 369", "tesla resonance"],
+    "secondary_keywords": [
+      "tesla frequency healing",
+      "tesla 369",
+      "tesla resonance"
+    ],
     "target_word_count": 2300,
     "status": "queued",
     "priority": 3
@@ -761,7 +1146,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "bioresonance therapy",
-    "secondary_keywords": ["bioresonance", "bicom therapy", "bioresonance machine"],
+    "secondary_keywords": [
+      "bioresonance",
+      "bicom therapy",
+      "bioresonance machine"
+    ],
     "target_word_count": 2300,
     "status": "queued",
     "priority": 3
@@ -772,7 +1161,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "chakra frequencies guide",
-    "secondary_keywords": ["chakra hertz", "chakra sound frequencies", "chakra tuning"],
+    "secondary_keywords": [
+      "chakra hertz",
+      "chakra sound frequencies",
+      "chakra tuning"
+    ],
     "target_word_count": 2200,
     "status": "queued",
     "priority": 3
@@ -783,7 +1176,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "432 hz vs 440 hz",
-    "secondary_keywords": ["432 hz tuning", "verdi tuning", "440 hz standard"],
+    "secondary_keywords": [
+      "432 hz tuning",
+      "verdi tuning",
+      "440 hz standard"
+    ],
     "target_word_count": 2100,
     "status": "queued",
     "priority": 3
@@ -794,7 +1191,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "528 hz frequency claims",
-    "secondary_keywords": ["528 hz love frequency", "528 hz dna", "miracle tone"],
+    "secondary_keywords": [
+      "528 hz love frequency",
+      "528 hz dna",
+      "miracle tone"
+    ],
     "target_word_count": 2200,
     "status": "queued",
     "priority": 3
@@ -805,7 +1206,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "earth resonance humans",
-    "secondary_keywords": ["earth frequency body", "geomagnetic biology", "resonance and health"],
+    "secondary_keywords": [
+      "earth frequency body",
+      "geomagnetic biology",
+      "resonance and health"
+    ],
     "target_word_count": 2300,
     "status": "queued",
     "priority": 3
@@ -816,7 +1221,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "pulsed electromagnetic field history",
-    "secondary_keywords": ["pemf nasa", "pemf history", "pemf timeline"],
+    "secondary_keywords": [
+      "pemf nasa",
+      "pemf history",
+      "pemf timeline"
+    ],
     "target_word_count": 2400,
     "status": "queued",
     "priority": 3
@@ -827,7 +1236,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "frequency medicine peer reviewed studies",
-    "secondary_keywords": ["frequency therapy research", "pemf peer review", "vibration medicine evidence"],
+    "secondary_keywords": [
+      "frequency therapy research",
+      "pemf peer review",
+      "vibration medicine evidence"
+    ],
     "target_word_count": 2400,
     "status": "queued",
     "priority": 3
@@ -838,7 +1251,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "science of vibration and matter",
-    "secondary_keywords": ["vibration physics", "resonance physics", "everything vibrates"],
+    "secondary_keywords": [
+      "vibration physics",
+      "resonance physics",
+      "everything vibrates"
+    ],
     "target_word_count": 2300,
     "status": "queued",
     "priority": 3
@@ -849,7 +1266,11 @@
     "stream": "C",
     "type": "educational",
     "primary_keyword": "biofield science overview",
-    "secondary_keywords": ["biofield research", "biofield therapy", "human energy field science"],
+    "secondary_keywords": [
+      "biofield research",
+      "biofield therapy",
+      "human energy field science"
+    ],
     "target_word_count": 2400,
     "status": "queued",
     "priority": 3

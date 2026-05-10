@@ -5,6 +5,7 @@ import { listSites, loadSite, envForSite } from "./sites.js";
 import { listArticles, updateArticle } from "./db.js";
 import { commitFile } from "./adapters/github.js";
 import { notify } from "./slack.js";
+import { pingIndexNow } from "./indexnow.js";
 
 const PUBLISHED_LOG = path.resolve("./data/published.json");
 
@@ -51,16 +52,54 @@ async function publishSite(siteSlug) {
     const content = rawContent.replace(/^(status:\s*)"(?:pending_review|approved|draft)"/m, '$1"published"');
     const targetPath = `${targetDir.replace(/\/$/, "")}/${a.slug}.md`;
     const message = `autoblog: publish "${a.title}" (article #${a.id})`;
+
+    // If the draft has an associated image, commit it alongside the markdown.
+    const imgMatch = content.match(/^image:\s*"([^"]+)"/m);
+    let imageCommit = null;
+    if (imgMatch) {
+      const relImage = imgMatch[1]; // e.g. "images/foo.png"
+      const localImage = path.join(path.dirname(a.draft_path), relImage);
+      if (fs.existsSync(localImage)) {
+        const imgBuf = fs.readFileSync(localImage);
+        const imgTargetPath = `${targetDir.replace(/\/$/, "")}/${relImage}`;
+        try {
+          imageCommit = await commitFile({
+            token,
+            repo,
+            branch,
+            path: imgTargetPath,
+            content: imgBuf,
+            message: `autoblog: publish image for "${a.title}"`,
+            binary: true,
+          });
+        } catch (e) {
+          console.error(`[${siteSlug}] #${a.id} image commit failed: ${e.message}`);
+          await notify(`⚠️ Image commit failed [${siteSlug}] #${a.id}: ${e.message}`);
+        }
+      } else {
+        console.error(`[${siteSlug}] #${a.id} image file missing locally: ${localImage}`);
+      }
+    }
+
     try {
       const result = await commitFile({ token, repo, branch, path: targetPath, content, message });
       const publishedUrl = result.html_url;
       updateArticle(a.id, { status: "published", published_url: publishedUrl });
 
-      // Move local draft → published/
+      // Move local draft → published/, plus its image if present
       fs.mkdirSync(site.publishedDir, { recursive: true });
       const movedTo = path.join(site.publishedDir, path.basename(a.draft_path));
       fs.renameSync(a.draft_path, movedTo);
       updateArticle(a.id, { draft_path: movedTo });
+      if (imgMatch) {
+        const relImage = imgMatch[1];
+        const localImage = path.join(path.dirname(a.draft_path), relImage);
+        const imageDest = path.join(site.publishedDir, relImage);
+        if (fs.existsSync(localImage)) {
+          fs.mkdirSync(path.dirname(imageDest), { recursive: true });
+          fs.renameSync(localImage, imageDest);
+        }
+      }
 
       appendLog({
         site: siteSlug,
@@ -75,6 +114,15 @@ async function publishSite(siteSlug) {
 
       await notify(`✅ Published [${siteSlug}] #${a.id}: *${a.title}*\n${publishedUrl}\nIf the site doesn't auto-deploy, trigger a build.`);
       console.log(`[${siteSlug}] #${a.id} → ${repo}:${targetPath}`);
+
+      // Auto-ping IndexNow (Bing/Yandex) so the new URL gets crawled in hours, not days.
+      const liveUrl = `${(site.config.site_url || "").replace(/\/$/, "")}/blog/${a.slug}`;
+      const indexNow = await pingIndexNow({ site, urls: [liveUrl] });
+      if (indexNow.ok) {
+        console.log(`[${siteSlug}] indexnow: pinged ${indexNow.urlCount} url(s) (HTTP ${indexNow.status})`);
+      } else if (!indexNow.skipped) {
+        console.warn(`[${siteSlug}] indexnow: ${indexNow.error || `HTTP ${indexNow.status} ${indexNow.body || ""}`}`);
+      }
     } catch (err) {
       console.error(`[${siteSlug}] #${a.id} publish failed: ${err.message}`);
       await notify(`⚠️ Publish failed [${siteSlug}] #${a.id}: ${err.message}`);

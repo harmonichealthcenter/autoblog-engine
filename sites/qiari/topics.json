@@ -26,8 +26,9 @@
     ],
     "type": "pillar",
     "target_word_count": 2300,
-    "status": "queued",
-    "priority": 1
+    "status": "drafted",
+    "priority": 1,
+    "last_draft_id": 3
   },
   {
     "id": "qiari-003",
@@ -40,8 +41,9 @@
     ],
     "type": "pillar",
     "target_word_count": 2200,
-    "status": "queued",
-    "priority": 1
+    "status": "drafted",
+    "priority": 1,
+    "last_draft_id": 4
   },
   {
     "id": "qiari-004",
@@ -152,8 +154,9 @@
     ],
     "type": "comparison",
     "target_word_count": 1700,
-    "status": "queued",
-    "priority": 1
+    "status": "drafted",
+    "priority": 1,
+    "last_draft_id": 5
   },
   {
     "id": "qiari-012",
@@ -166,8 +169,9 @@
     ],
     "type": "comparison",
     "target_word_count": 1800,
-    "status": "queued",
-    "priority": 1
+    "status": "drafted",
+    "priority": 1,
+    "last_draft_id": 7
   },
   {
     "id": "qiari-013",
@@ -194,8 +198,9 @@
     ],
     "type": "comparison",
     "target_word_count": 1500,
-    "status": "queued",
-    "priority": 1
+    "status": "drafted",
+    "priority": 1,
+    "last_draft_id": 9
   },
   {
     "id": "qiari-015",

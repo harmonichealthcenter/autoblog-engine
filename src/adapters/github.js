@@ -2,7 +2,7 @@
 // Commits a markdown file to a target repo at the configured path.
 // No local clone required.
 
-export async function commitFile({ token, repo, branch = "main", path: filePath, content, message }) {
+export async function commitFile({ token, repo, branch = "main", path: filePath, content, message, binary = false }) {
   const url = `https://api.github.com/repos/${repo}/contents/${encodeURIComponent(filePath).replace(/%2F/g, "/")}`;
   const headers = {
     Authorization: `Bearer ${token}`,
@@ -20,9 +20,16 @@ export async function commitFile({ token, repo, branch = "main", path: filePath,
     throw new Error(`GitHub HEAD ${head.status}: ${await head.text()}`);
   }
 
+  // For binary files (images, etc.), `content` should already be a Buffer.
+  const b64 = binary || Buffer.isBuffer(content)
+    ? Buffer.isBuffer(content)
+      ? content.toString("base64")
+      : Buffer.from(content).toString("base64")
+    : Buffer.from(content, "utf8").toString("base64");
+
   const body = {
     message,
-    content: Buffer.from(content, "utf8").toString("base64"),
+    content: b64,
     branch,
     ...(sha ? { sha } : {}),
   };

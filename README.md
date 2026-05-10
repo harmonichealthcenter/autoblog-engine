@@ -140,6 +140,32 @@ This engine only handles **generation + commit**. The Qiari webapp still needs a
 
 Spec that as a separate task once this engine is running.
 
+## Image generation (Replicate / FLUX)
+
+Each generated draft now includes a hero image, generated via Replicate's FLUX models. Default model is `black-forest-labs/flux-schnell` (~$0.003/image, 1-2s). Override per site by setting `config.image.model` to `flux-dev` (~$0.025) or `flux-1.1-pro` (~$0.04) for higher quality.
+
+**Setup:**
+```bash
+# .env
+REPLICATE_API_TOKEN=r8_...
+```
+
+If `REPLICATE_API_TOKEN` is unset, generation skips images silently (article still saves and the frontmatter still includes `image_prompt` for later backfill).
+
+**Frontmatter additions:** `image`, `image_alt`, `og_image`, `twitter_card: summary_large_image`, `canonical_url`. The webapp's blog template should consume these for OG/Twitter card meta tags.
+
+**Storage:** images live alongside the markdown — `sites/<slug>/drafts/images/<slug>.png`, then move to `published/images/` on approval. On publish, the github adapter commits both the markdown and the image to the target repo at `content/blog/<slug>.md` and `content/blog/images/<slug>.png`.
+
+**Backfill historical articles:**
+```bash
+npm run backfill:images                  # all sites, drafts + published
+npm run backfill:images qicoil           # one site
+npm run backfill:images qiari --dry-run  # preview
+npm run backfill:images qiari --published   # only published, skip drafts
+```
+
+Backfill scans for articles that have `image_prompt` in frontmatter but no `image`. Generates the image, rewrites the frontmatter to add the SEO meta block, and (for published articles) re-commits both files to the target repo.
+
 ## Per-site compliance gate
 
 A site can opt into a compliance check that runs on the final revised draft before save. Configure under `sites/<slug>/config.json` -> `compliance`:
