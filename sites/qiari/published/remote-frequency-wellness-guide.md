@@ -10,7 +10,11 @@ canonical_url: "https://www.qiari.ai/blog/remote-frequency-wellness-guide"
 image_prompt: "Abstract visualization of subtle energy waves or ripples emanating from a smartphone screen into a calm, minimalist space with soft light."
 internal_link_count: 9
 generation_cost_cents: 118
-status: "published"
+status: "pending_review"
+image: "images/remote-frequency-wellness-guide.png"
+image_alt: "Abstract visualization of subtle energy waves or ripples emanating from a smartphone screen into a calm minimalist sp..."
+og_image: "images/remote-frequency-wellness-guide.png"
+twitter_card: "summary_large_image"
 ---
 
 # Remote Frequency Wellness Explained: The Complete 2026 Guide
