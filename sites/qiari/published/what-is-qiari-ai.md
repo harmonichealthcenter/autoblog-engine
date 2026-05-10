@@ -10,6 +10,11 @@ image_prompt: "Abstract visualization of gentle frequency waves or vibrations em
 internal_link_count: 11
 generation_cost_cents: 128
 status: "published"
+image: "images/what-is-qiari-ai.png"
+image_alt: "Abstract visualization of gentle frequency waves or vibrations emanating from a smartphone screen with soft blue and ..."
+og_image: "images/what-is-qiari-ai.png"
+twitter_card: "summary_large_image"
+canonical_url: "https://www.qiari.ai/blog/what-is-qiari-ai"
 ---
 
 # What is Qiari.ai? A Complete Guide to Remote Frequency Wellness in 2026
