@@ -10,7 +10,7 @@ canonical_url: "https://www.qiari.ai/blog/qiari-pricing-plans-comparison"
 image_prompt: "Abstract visualization of three ascending tiers or layers in soft blue and teal gradients, representing progression and choice, with no text or branding visible."
 internal_link_count: 7
 generation_cost_cents: 80
-status: "pending_review"
+status: "published"
 image: "images/qiari-pricing-plans-comparison.png"
 image_alt: "Abstract visualization of three ascending tiers or layers in soft blue and teal gradients representing progression an..."
 og_image: "images/qiari-pricing-plans-comparison.png"
