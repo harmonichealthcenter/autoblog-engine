@@ -10,7 +10,11 @@ canonical_url: "https://www.qiari.ai/blog/qiari-pricing-plans-comparison"
 image_prompt: "Abstract visualization of three ascending tiers or layers in soft blue and teal gradients, representing progression and choice, with no text or branding visible."
 internal_link_count: 7
 generation_cost_cents: 80
-status: "published"
+status: "pending_review"
+image: "images/qiari-pricing-plans-comparison.png"
+image_alt: "Abstract visualization of three ascending tiers or layers in soft blue and teal gradients representing progression an..."
+og_image: "images/qiari-pricing-plans-comparison.png"
+twitter_card: "summary_large_image"
 ---
 
 # Qiari Basic vs Core vs Ultra: How to Pick the Right Plan
