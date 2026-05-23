@@ -309,7 +309,17 @@ export async function generateOne(siteSlug) {
 
   const internalLinkCount = (finalText.match(new RegExp(`\\]\\(https?://[^)]*${site.config.site_domain.replace(/\./g, "\\.")}`, "g")) || []).length;
 
-  const status = complianceFailed ? "compliance_failed" : "pending_review";
+  // AUTO_APPROVE=true (default): skip human review, route clean drafts straight to "approved"
+  // so the hourly publish cron commits them. Compliance-flagged drafts still go to pending_review
+  // for safety; only blocking failures stay in compliance_failed.
+  const autoApprove = (process.env.AUTO_APPROVE || "true").toLowerCase() !== "false";
+  const status = complianceFailed
+    ? "compliance_failed"
+    : complianceFlagged
+    ? "pending_review"
+    : autoApprove
+    ? "approved"
+    : "pending_review";
   const frontmatter = buildFrontmatter({
     meta: meta.parsed,
     topic,
