@@ -8,6 +8,8 @@ import { insertArticle, updateArticle, getArticleBySlug } from "./db.js";
 import { notify } from "./slack.js";
 import { checkCompliance, summarizeCompliance } from "./compliance.js";
 import { generateImage, imageAltFromPrompt } from "./images.js";
+import { sendEmail, emailConfigured } from "./email.js";
+import { buildLinks } from "./approval-tokens.js";
 
 function slugify(s) {
   return s
@@ -123,6 +125,31 @@ async function stageRevise({ systemPrompt, critiqueText, prior }) {
 Apply the fixes from your critique and output the FINAL article. Output the complete revised markdown article only — no preamble, no commentary, no critique notes. Start with the H1 title.
 `.trim();
 
+  return callClaude({
+    model: MODELS.generate,
+    systemPrompt,
+    instructions,
+    max_tokens: 8000,
+    prior,
+  });
+}
+
+// Rescue pass: invoked when checkCompliance() returns blocking violations on the
+// revised draft. Feeds the exact failing patterns back to the model so it can
+// rewrite those passages. Output is a full replacement article.
+async function stageRescue({ systemPrompt, blockingList, prior }) {
+  const violations = blockingList
+    .map((b) => `- pattern \`${b.pattern}\` matched "${b.match}" (rewrite to remove)`)
+    .join("\n");
+  const instructions = `
+Your previous article failed the site's compliance gate. The following hard-blocking patterns matched in your text — you must rewrite the affected passages so they no longer appear (except inside the literal FDA disclaimer, which must remain verbatim):
+
+${violations}
+
+Rewrite the FULL article from scratch keeping the same outline, primary keyword, length, internal links, and meta — but with the violating language replaced by experiential / non-medical phrasing as described in the system prompt. Re-include the mandatory FDA disclaimer verbatim if Qi Coil benefits are mentioned.
+
+Output ONLY the rewritten markdown article, starting with the H1. No preamble, no commentary.
+`.trim();
   return callClaude({
     model: MODELS.generate,
     systemPrompt,
@@ -262,7 +289,46 @@ export async function generateOne(siteSlug) {
   });
   totalCost += revised.cost_cents;
 
-  const finalText = revised.text;
+  let finalText = revised.text;
+
+  // Compliance rescue: if the revised draft trips blocking patterns, run ONE
+  // extra rewrite with the violations fed back. If it still fails, we'll fall
+  // through to pending_review and email the approval link.
+  let preCheck = checkCompliance(finalText, site);
+  let rescued = false;
+  if (preCheck.enabled && preCheck.blocking.length > 0) {
+    console.log(
+      `[${siteSlug}] compliance rescue pass — initial violations: ${summarizeCompliance(preCheck)}`
+    );
+    const threadAfterRevise = [
+      ...threadAfterCritique,
+      { role: "user", content: "Output the FINAL revised article now." },
+      revised.assistant_msg,
+    ];
+    try {
+      const rescue = await stageRescue({
+        systemPrompt,
+        blockingList: preCheck.blocking,
+        prior: threadAfterRevise,
+      });
+      totalCost += rescue.cost_cents;
+      const rescuedText = rescue.text;
+      const rescuedCheck = checkCompliance(rescuedText, site);
+      // Only adopt the rescue if it actually reduces blocking violations.
+      if (rescuedCheck.blocking.length < preCheck.blocking.length) {
+        finalText = rescuedText;
+        rescued = true;
+        console.log(
+          `[${siteSlug}] rescue applied — blocking ${preCheck.blocking.length} → ${rescuedCheck.blocking.length}`
+        );
+      } else {
+        console.log(`[${siteSlug}] rescue produced no improvement, keeping original revise`);
+      }
+    } catch (e) {
+      console.error(`[${siteSlug}] rescue pass failed:`, e.message);
+    }
+  }
+
   const wc = wordCount(finalText);
 
   // Meta
@@ -272,10 +338,17 @@ export async function generateOne(siteSlug) {
   const slug = (meta.parsed.slug || slugify(meta.parsed.title || topic.title_hint)).slice(0, 80);
   const filename = `${topic.id}-${slug}.md`;
 
-  // Compliance check (per-site, configured via config.json -> compliance)
+  // Compliance check (per-site, configured via config.json -> compliance).
+  // Runs on the final text (post-rescue, if a rescue happened).
+  //
+  // Policy: blocking violations that survive the rescue pass route to
+  // pending_review (NOT compliance_failed) so the email approval link reaches a
+  // human. We never silently drop a draft to needs-rework after rescue.
   const compliance = checkCompliance(finalText, site);
-  const complianceFailed = compliance.enabled && compliance.blocking.length > 0;
-  const complianceFlagged = compliance.enabled && !complianceFailed && compliance.flags.length > 0;
+  const complianceStillBlocking = compliance.enabled && compliance.blocking.length > 0;
+  const complianceFailed = false; // legacy bucket, no longer used
+  const complianceFlagged =
+    compliance.enabled && (compliance.flags.length > 0 || complianceStillBlocking);
 
   const draftDir = complianceFailed
     ? path.join(site.draftsDir, "needs-rework")
@@ -366,18 +439,77 @@ export async function generateOne(siteSlug) {
   writeTopics(site, topics);
 
   const costStr = `$${(totalCost / 100).toFixed(2)}`;
-  const emoji = complianceFailed ? "🚫" : complianceFlagged ? "⚠️" : "📝";
-  const statusNote = complianceFailed
-    ? `\n*COMPLIANCE FAILED* — routed to needs-rework. ${summarizeCompliance(compliance)}`
-    : complianceFlagged
+  const emoji = complianceFlagged ? "⚠️" : "📝";
+  const statusNote = complianceFlagged
     ? `\nFlags for human review: ${summarizeCompliance(compliance)}`
     : "";
   await notify(
     `${emoji} New ${siteSlug} draft #${articleId}: *${meta.parsed.title || topic.title_hint}* (${wc} words, ${costStr})${statusNote}\nReview: \`npm run review:show ${articleId}\``
   );
 
+  // Email approval link when human review is needed.
+  if (status === "pending_review" && emailConfigured()) {
+    try {
+      await sendApprovalEmail({
+        articleId,
+        title: meta.parsed.title || topic.title_hint,
+        siteSlug,
+        wordCount: wc,
+        compliance,
+        draftPath,
+        finalText,
+      });
+      console.log(`[${siteSlug}] approval email sent for #${articleId}`);
+    } catch (e) {
+      console.error(`[${siteSlug}] approval email failed for #${articleId}: ${e.message}`);
+      await notify(`⚠️ Approval email failed [${siteSlug}] #${articleId}: ${e.message}`);
+    }
+  }
+
   console.log(`[${siteSlug}] saved draft #${articleId} → ${draftPath} (${wc} words, ${costStr}) [${status}]`);
   return { articleId, draftPath, wordCount: wc, costCents: totalCost, complianceStatus: status };
+}
+
+async function sendApprovalEmail({ articleId, title, siteSlug, wordCount, compliance, draftPath, finalText }) {
+  const links = buildLinks(articleId);
+  if (!links) throw new Error("APPROVAL_BASE_URL not set");
+  const complianceSummary = compliance && (compliance.blocking.length || compliance.flags.length)
+    ? summarizeCompliance(compliance)
+    : "clean";
+  const subject = `[autoblog:${siteSlug}] #${articleId} needs review — ${title}`;
+  const text = [
+    `Draft #${articleId} for ${siteSlug} needs review before it can publish.`,
+    ``,
+    `Title:    ${title}`,
+    `Words:    ${wordCount}`,
+    `Compliance: ${complianceSummary}`,
+    `File:     ${draftPath}`,
+    ``,
+    `Approve:  ${links.approve}`,
+    `Edit:     ${links.edit}`,
+    `Reject:   ${links.reject}`,
+    ``,
+    `--- DRAFT BODY ---`,
+    finalText,
+  ].join("\n");
+  const safeBody = (finalText || "").replace(/[<&>]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" }[c]));
+  const html = `
+    <div style="font-family:system-ui,sans-serif;max-width:760px">
+      <p>Draft <strong>#${articleId}</strong> for <strong>${siteSlug}</strong> needs review before it can publish.</p>
+      <table style="font-size:14px;border-collapse:collapse">
+        <tr><td style="padding:4px 12px 4px 0;color:#666">Title</td><td>${title.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#666">Words</td><td>${wordCount}</td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#666">Compliance</td><td>${complianceSummary.replace(/</g, "&lt;")}</td></tr>
+      </table>
+      <p style="margin-top:1rem">
+        <a href="${links.approve}" style="background:#0a7;color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none;margin-right:8px">✅ Approve & publish</a>
+        <a href="${links.edit}" style="background:#06c;color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none;margin-right:8px">✏️ Edit</a>
+        <a href="${links.reject}" style="background:#c33;color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none">🗑 Reject</a>
+      </p>
+      <hr style="margin:1.5rem 0;border:0;border-top:1px solid #ddd">
+      <pre style="white-space:pre-wrap;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:#f6f6f6;padding:1rem;border-radius:6px">${safeBody}</pre>
+    </div>`;
+  await sendEmail({ subject, text, html });
 }
 
 // CLI: `node src/generate.js [site-slug]`

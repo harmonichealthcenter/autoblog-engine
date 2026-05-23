@@ -5,6 +5,9 @@ import { generateOne } from "./generate.js";
 import { publishSite } from "./publish.js";
 import { listArticles } from "./db.js";
 import { notify } from "./slack.js";
+import { startServer } from "./server.js";
+import { sendEmail, emailConfigured } from "./email.js";
+import { buildLinks } from "./approval-tokens.js";
 
 const cronEnabled = (process.env.CRON_ENABLED || "true").toLowerCase() !== "false";
 
@@ -33,6 +36,20 @@ async function remindStaleReviews() {
         `⏰ [${slug}] ${stale.length} draft(s) pending review for >${STALE_HOURS}h:\n` +
           stale.map((a) => `• #${a.id} ${a.title}`).join("\n")
       );
+      if (emailConfigured()) {
+        const lines = stale.map((a) => {
+          const links = buildLinks(a.id);
+          return links
+            ? `#${a.id} ${a.title}\n  approve: ${links.approve}\n  edit:    ${links.edit}\n  reject:  ${links.reject}`
+            : `#${a.id} ${a.title}`;
+        });
+        const text = `These ${slug} drafts have been waiting for review longer than ${STALE_HOURS}h:\n\n${lines.join("\n\n")}`;
+        try {
+          await sendEmail({ subject: `[autoblog:${slug}] ${stale.length} stale draft(s) >${STALE_HOURS}h`, text });
+        } catch (e) {
+          console.error(`[${slug}] stale reminder email failed: ${e.message}`);
+        }
+      }
     }
   }
 }
@@ -62,6 +79,9 @@ if (cronEnabled) {
 } else {
   console.log("autoblog-engine started with CRON_ENABLED=false (idle).");
 }
+
+// HTTP server for email approval links (and Railway healthcheck).
+startServer();
 
 // Keep alive
 setInterval(() => {}, 1 << 30);
