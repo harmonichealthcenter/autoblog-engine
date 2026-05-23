@@ -13,6 +13,7 @@
     "review:list": "node src/review.js list",
     "review:show": "node src/review.js show",
     "review:approve": "node src/review.js approve",
+    "review:approve-all": "node src/review.js approve-all",
     "review:reject": "node src/review.js reject",
     "review:edit": "node src/review.js edit",
     "publish": "node src/publish.js",

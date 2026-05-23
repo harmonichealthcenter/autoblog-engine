@@ -44,6 +44,25 @@ function cmdApprove() {
   console.log(`✅ #${id} approved → run \`npm run publish\` to push to CMS repo.`);
 }
 
+function cmdApproveAll() {
+  const site = process.argv[3];
+  const sites = site ? [site] : listSites();
+  let total = 0;
+  for (const s of sites) {
+    const rows = listArticles(s, "pending_review");
+    for (const a of rows) {
+      updateArticle(a.id, { status: "approved" });
+      console.log(`✅ #${a.id} [${s}] ${a.title || a.slug}`);
+      total++;
+    }
+  }
+  if (total === 0) {
+    console.log("No pending_review drafts to approve.");
+  } else {
+    console.log(`\nApproved ${total} draft(s). Hourly publish cron will push them within the hour, or run \`npm run publish\` now.`);
+  }
+}
+
 function cmdReject() {
   const id = parseInt(process.argv[3], 10);
   const reason = process.argv.slice(4).join(" ") || "no reason given";
@@ -86,13 +105,14 @@ function cmdEdit() {
 }
 
 const cmd = process.argv[2];
-const handlers = { list: cmdList, show: cmdShow, approve: cmdApprove, reject: cmdReject, edit: cmdEdit };
+const handlers = { list: cmdList, show: cmdShow, approve: cmdApprove, "approve-all": cmdApproveAll, reject: cmdReject, edit: cmdEdit };
 const handler = handlers[cmd];
 if (!handler) {
   console.error(`Usage:
   node src/review.js list [status] [site]
   node src/review.js show <id>
   node src/review.js approve <id>
+  node src/review.js approve-all [site]
   node src/review.js reject <id> "reason"
   node src/review.js edit <id>`);
   process.exit(1);
