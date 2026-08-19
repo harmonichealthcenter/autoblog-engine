@@ -1,128 +1,120 @@
 ---
 title: "Qiari Signup: Get Started in 5 Minutes + First Week Guide"
 slug: "qiari-signup-first-week-guide"
-meta_description: "Complete Qiari signup walkthrough plus how to set up personalization in your first week. Learn what makes the onboarding work and which tier to start with."
+meta_description: "Complete Qiari signup walkthrough plus a three-session first week framework to actually feel the difference. Start your device-free frequency wellness practice today."
 primary_keyword: "Qiari signup"
 secondary_keywords: ["start Qiari","Qiari first week","new user guide"]
 type: "howto"
 topic_id: "qiari-037"
 canonical_url: "https://www.qiari.ai/blog/qiari-signup-first-week-guide"
-image_prompt: "A smartphone screen showing a calm, minimalist app interface with soft blue and purple gradient tones, displaying session options and intention settings, no people or logos visible."
+image_prompt: "Abstract visualization of a person's hand holding a smartphone with soft frequency waves or ripples emanating from the screen in calming blues and purples, no text or logos visible."
 image: "images/qiari-signup-first-week-guide.png"
-image_alt: "A smartphone screen showing a calm minimalist app interface with soft blue and purple gradient tones displaying sessi..."
+image_alt: "Abstract visualization of a person's hand holding a smartphone with soft frequency waves or ripples emanating from th..."
 og_image: "images/qiari-signup-first-week-guide.png"
 twitter_card: "summary_large_image"
 internal_link_count: 7
-generation_cost_cents: 79
+generation_cost_cents: 77
 status: "published"
 ---
 
 # How to Sign Up for Qiari and Get the Most Out of Your First Week
 
-You downloaded the app at 11pm on a Tuesday because someone you trust mentioned it, or because the algorithm finally served you something other than another meditation subscription. The signup screen is open. You're tired, mildly curious, and not entirely sure what you're agreeing to. This guide is for that exact moment, and for the seven days that follow.
+You just paid for the Qiari signup, opened the app, tapped through the intro screens, and now you're sitting there wondering whether to pick "focus" or "calm" first. That moment right there is where most new users quietly set themselves up for a mediocre first week. Not because they picked the wrong session, but because they treated the first week like they'd treat any other wellness app, which is to say, they tried it once, forgot about it for four days, tried it again, and then wondered why nothing felt particularly special.
 
-Here's the short version before we get into specifics: Qiari signup takes about five minutes, but the first week matters far more than the signup itself. The app gets more useful as you teach it which intentions actually move the needle for you. That teaching happens through small, deliberate choices in your first seven days. Skip that calibration and you're using a generic tool. Lean into it and you're using something tuned to you.
+The Qiari signup is fast. Getting the most out of your first week is a different skill, and this guide walks through both.
 
-## Getting Started: Why Your First Week Actually Matters
+## Why Most People Get Qiari Wrong From Day One
 
-Most app onboarding is designed to get you through a tutorial and into a paywall. Qiari is structured differently because the sessions themselves are personalized, which means the platform needs input from you before it can do its best work. Your first week isn't a trial period where you passively decide if you like it. It's a calibration window where you're actively shaping what Qiari delivers.
+Here's the honest version: your first week on Qiari is not the week you're supposed to have some kind of breakthrough experience. It's the week the platform is quietly learning you, and the week you're quietly learning what to pay attention to inside a session. Both of those things take a few reps.
 
-### What makes the Qiari onboarding different
+### The common mistake: treating it like a meditation app
 
-When you start Qiari, the app asks you to define intentions rather than pick from a fixed library of "programs." That distinction matters. You're not selecting "Stress Relief #4." You're telling the platform what calm means in your life this week, and the session structure adapts. If you want a deeper breakdown of how the underlying experience works before signing up, the [how Qiari works explainer](https://www.qiari.ai/blog/how-qiari-works) covers the mechanics in plain language.
+Most people arrive at Qiari with muscle memory from Calm or Headspace. You press play, something soothing happens, you feel a little better, done. Qiari is structured differently. It's an intention-driven frequency wellness experience, and the sessions get more relevant as you use it, not less. If you approach it like a meditation app, you'll probably describe your first session as "nice" and never quite understand why longtime users talk about it the way they do. If you approach it like a practice you're building over seven to fourteen days, the whole thing clicks. There's a longer breakdown of this in the [Qiari beginner guide for your first month](https://www.qiari.ai/blog/qiari-beginner-guide-first-month), but the seven-day version is what we're covering here.
 
-## Creating Your Qiari Account in 5 Minutes
+## Creating Your Qiari Account in Under 5 Minutes
 
-The actual signup is unremarkable, which is the point. Download the app from your phone's store, or open the web version on desktop. Enter an email, set a password, verify your email when the link arrives. You'll then be asked a handful of questions about what brought you to Qiari, what time of day you typically have ten minutes free, and what you're hoping to shift.
+The Qiari signup itself is genuinely fast. The friction, if there is any, comes from the intention-matching quiz, and that's the part worth slowing down for.
 
-### Download, email, password (the actual steps)
+### What you'll need before you start
 
-There's no credit card required to create the account itself. You can poke around, look at the session library, and read intention descriptions before deciding on a plan. If you want to compare what each tier unlocks before committing, the [pricing plans comparison](https://www.qiari.ai/blog/qiari-pricing-plans-comparison) lays it out without the marketing gloss.
+You need an email address, a payment method (if you're going straight into a paid tier rather than the trial), and about five minutes where you're not being interrupted. Do the signup somewhere quiet. Not because it's sacred, but because the intention quiz asks you to think about what you actually want from a wellness practice, and answering that question while half-watching a podcast produces vague answers, which produces vague recommendations.
 
-### Choosing your first subscription tier as a new user
+### Walking through the signup flow
 
-Most new users do not need to start at the top tier. Basic gives you access to the core session experience and is usually enough to figure out whether Qiari fits into your life. Core adds deeper personalization and a wider session catalog. Ultra is for people who already know they want everything, including practitioner-adjacent features. If you're unsure, start lower and upgrade in week two if the sessions are landing. The [free trial vs paid tiers breakdown](https://www.qiari.ai/blog/qiari-free-trial-vs-paid-tiers) walks through which features show up at which level.
+You'll create an account, verify your email, and then the app walks you through a short onboarding that includes basic profile information and the intention quiz. If you want the full breakdown of what pricing tier you're landing on, the [Qiari pricing plans comparison](https://www.qiari.ai/blog/qiari-cost-pricing-plans-2026) covers the current Basic, Core, and Ultra structure. Most people start with the free trial or the Core tier and adjust from there.
 
-## Setting Up Your Personalization Profile
+### Why the intention-matching quiz actually matters
 
-This is the step most people rush, and it's the one that determines how useful Qiari feels by day seven. Take ten extra minutes here.
+The quiz is where new users tend to click through without thinking, and it's the single most important input the app has about you in week one. Your answers become the seed data for your first session recommendations. "I want to feel less anxious" produces a very different first week than "I want to feel more focused in the mornings." Both are valid. Neither is generic. Answer honestly, specifically, and if you're between two intentions, pick the one that's more true this month, not the one that sounds more impressive.
 
-### Defining your intentions: three real-world examples
+## Choosing Your First Session: Three Real Examples
 
-Generic intentions produce generic sessions. Specific intentions produce sessions that feel weirdly relevant. Three examples of what a sharper intention looks like in practice: instead of "focus," try "focus for deep work between 9 and 11am when my brain is foggy from poor sleep." Instead of "calm," try "calm specifically for the wind-down hour before bed when I'm still thinking about work." Instead of "energy," try "afternoon energy without the jittery edge of more coffee." The platform uses the specificity to shape what you experience and when it suggests sessions to you.
+Rather than telling you to "pick an intention that resonates," which is exactly the kind of abstract advice that makes new user guides useless, here are three actual archetypes and what their first session usually looks like.
 
-### How Qiari learns what "focus" or "calm" means for you specifically
+### The focus block user (morning, deep work)
 
-After each session, Qiari asks for brief feedback. This is not a customer satisfaction survey. It's how the personalization layer figures out which intention framings actually correspond to felt shifts for you. Skip the feedback and the app stays generic. Give it honest input, even just a quick tap, and the suggestions start narrowing toward what works. If you're curious about the broader frame this fits into, the [remote quantum energy sessions guide](https://www.qiari.ai/blog/remote-quantum-energy-sessions-guide) is worth a read.
+You work from home, you have a 90-minute block of writing or coding, and you want to enter it in a sharper state than coffee alone puts you in. Your first session is a morning focus session, ten to fifteen minutes, headphones on, done at your desk before you open Slack. You're not looking to feel transported. You're looking to feel like the top layer of mental chatter has settled. The [Qiari for focus deep work guide](https://www.qiari.ai/blog/qiari-for-focus-deep-work) has more on how to structure this.
 
-## Picking Your First Session (Without Overthinking It)
+### The wind-down user (evening, stress relief)
 
-Decision paralysis is the most common reason new users abandon wellness apps in week one. Don't overthink the first pick.
+You had a fine day but you're carrying it in your shoulders, and you know if you go straight from laptop to bed you'll scroll for an hour. Your first session is an evening wind-down, done in a chair or on the couch, not in bed. You're using it as a transition ritual, not as a sleep aid. If sleep is actually the goal, the [Qiari for sleep guide](https://www.qiari.ai/blog/qiari-for-sleep-guide) walks through a slightly different setup.
 
-### Why session length matters for beginners
+### The curiosity-first user (trying everything)
 
-Start with a session under fifteen minutes. Longer isn't better at the start. You're trying to build a repeatable habit, not run a marathon. A ten minute session that you actually do beats a forty minute session you postpone three days in a row.
+You bought Qiari because a friend mentioned it or you saw David Wong's content and you're not sure what you're solving for yet. Your first session should be short, in the middle of the day, on whatever intention feels the most interesting. Then note what you noticed. Curiosity users get the most value from paying attention to which sessions they actually want to go back to, because that pattern reveals the real intention faster than the intake quiz does.
 
-### Finding sessions by intention vs. by time-of-day
+## Your First Week Framework: The Three-Session Reset
 
-Qiari lets you browse by intention or by time-of-day. Both work. If you already know what you want to shift, browse by intention. If you're not sure what you need but you have a specific window open (the twenty minutes before lunch, for example), browse by time-of-day and let the suggestions do the choosing. The [guide to choosing a Qiari session](https://www.qiari.ai/blog/how-to-choose-qiari-session) goes deeper on this if you want a framework.
+Three sessions in the first week beats one session per day for a week, especially if those three sessions are done with intention.
 
-### The difference between guided and ambient experiences
+### Session one: establishing your baseline
 
-Guided sessions include audio cues that walk you through. Ambient sessions are lower input and let you sit with the experience without instruction. New users often gravitate toward guided in the first few days, then shift to ambient once they know what to expect.
+Before you press play, note where you are on a one-to-ten scale for whatever intention you picked. Focused, calm, energetic, whatever. After the session, note it again. Don't judge the number. You're building a reference point.
 
-## Your First Week Game Plan: Three Key Milestones
+### Sessions two and three: pattern recognition
 
-The seven day arc is not "do a session every day and hope for the best." It has phases.
+By session three, you'll start noticing things. Maybe a particular time of day works better. Maybe headphones matter more than you expected. Maybe one session type feels flat and another feels textured. This is where the personalization layer starts doing real work, because the AI is watching which sessions you complete, which you rate highly, and which you replay. There's more on how this works in the [AI frequency wellness platform personalization](https://www.qiari.ai/blog/ai-frequency-wellness-platform-personalization) breakdown.
 
-### Day 1-2: building the habit loop
+### Why consistency beats randomness in these seven days
 
-Pick a consistent time of day and do a short session both days. Do not change your intention yet. The first two days are about anchoring Qiari to a specific moment in your routine, whether that's after morning coffee or in the gap between work and dinner. The point is repetition at a fixed time.
+If you do one session Monday and one Sunday, the app has almost no signal to work with, and neither do you. Three sessions spaced across the same week, ideally around similar times of day, give both you and the system enough to work with. This is the [15-minute daily practice framework](https://www.qiari.ai/blog/qiari-daily-practice-15-minute-framework) in miniature.
 
-### Day 3-4: noticing what actually shifts
+## How Qiari's AI Learns Your Preferences as You Go
 
-By day three, start paying attention to the gap between how you feel before a session and how you feel an hour after. Not during. After. Some people notice it as a slight shift in how their shoulders sit, or how their thoughts pace themselves. Others notice nothing dramatic and only realize in retrospect that they slept better. Your job is not to manufacture a feeling. It's to notice what's actually there.
+After each session, Qiari asks for a small amount of feedback. This is not a formality.
 
-### Day 5-7: refining your intention choices based on what resonates
+### How to give feedback that actually shapes recommendations
 
-By day five, you'll have a sense of which intentions are landing and which aren't. This is when you swap out the ones that feel generic and replace them with more specific framings. If "calm" did nothing but "wind-down before bed" worked, lean into that direction. The [remote frequency wellness guide](https://www.qiari.ai/blog/remote-frequency-wellness-guide) has more on why specificity tends to correlate with felt response.
+Rate the session honestly. If it didn't land, say so. The system is looking for signal, and consistently five-starring everything gives it about as much information as consistently one-starring everything. The users who report the sharpest personalization by month two are the ones who gave differentiated feedback in week one.
 
-## Common First-Week Friction Points (And How to Fix Them)
+### The difference between one-off sessions and building a practice
 
-A few things trip up almost every new user.
+A one-off session is a nice ten minutes. A practice is a compounding thing where sessions three, four, and five feel meaningfully different from session one because both you and the platform have data now. This is the shift most first-week users don't quite make, and it's the whole game.
 
-### "I'm not feeling anything yet" and what that actually means
+## Common First-Week Questions New Users Ask
 
-If you're three days in and feeling nothing, that's normal. It usually means one of two things. Either your intentions are still too generic and the sessions aren't pointing at anything specific in your life, or you're trying too hard to feel something during the session itself. Felt shifts often show up between sessions, not inside them. Adjust your intention specificity first, then give it another two days before judging.
+**Headphones or speakers?** Headphones for anything focus, sleep, or introspective. Speakers are fine for background sessions where you're moving around.
 
-### Managing notifications so sessions fit your schedule, not interrupt it
+**How long until I "feel" something?** Some people feel something in session one. Some don't until session four or five. Neither is a sign of anything except your particular nervous system and how much you're paying attention.
 
-Qiari can send reminders. Set them for windows when you actually have ten free minutes, not for arbitrary times. If the default reminders are interrupting work, change them. The app is supposed to slot into your life, not the other way around.
+**Can I use it while doing other things?** Yes for background sessions. No for anything you actually want to get value from. Ten minutes of undivided attention beats an hour of half-attention.
 
-### Switching intentions mid-week when your needs change
+**What if I don't vibe with my first few sessions?** Try a different intention category and a different time of day before drawing conclusions. Most "this isn't for me" reactions in week one are actually "I picked the wrong session for my current state."
 
-You can change intentions whenever you want. If Monday's stress is different from Thursday's stress, update the intention. The platform is built to adapt.
+## Moving From Trial to the Right Subscription Plan
 
-## Unlocking Your Core Tier Features: What's Available After Signup
+By day five or six, you'll have a better sense of which tier fits.
 
-The features available to you scale with your plan, and some unlock based on usage.
+### Understanding the tier difference
 
-### The difference between Basic and Core tiers for new users
+Basic gives you the core session library. Core opens up more personalization and session types. Ultra is for people who want the full library plus the deeper personalization layer. Practitioners have a separate tier covered in the [Qiari practitioner tier breakdown](https://www.qiari.ai/blog/qiari-practitioner-tier-vs-subscriber-tier).
 
-Basic gives you the daily session experience and a curated intention library. Core adds the wider catalog, deeper personalization, and the ability to layer intentions for more complex states (focused but also calm, for instance). For most new users, Basic is enough for week one. Core makes sense in week two if you're using the app daily.
+### When to upgrade and when to stay put
 
-### Advanced personalization features you'll access once you've logged three sessions
-
-A few personalization features only activate after you've completed a handful of sessions with feedback, because the platform needs data to personalize. Logging three to five sessions in your first week is what flips those on.
-
-### When (and whether) to upgrade before the trial ends
-
-Don't upgrade just because the app asks. Upgrade if, by day six, you're hitting the limits of your current tier and you want what's behind the paywall. If you're not, stay where you are. You can upgrade any time.
-
-## Moving Beyond Signup: Your RESONANCE Checkpoint
-
-By day seven, you'll have enough data on yourself to make a real call. Not "is this app good" in the abstract, but "did this app create noticeable shifts in the specific intentions I named." That's a much better question, and it's the one Qiari is built to answer honestly.
-
-If by day seven the sessions are landing, the intentions feel sharper, and you're starting to recognize your own RESONANCE in the experiences that work versus the ones that don't, you're past the calibration phase and into the part where Qiari actually starts pulling its weight. Keep going, keep refining, and consider whether the deeper features at the next tier are worth opening up. If you want to compare the full picture of what's available beyond signup, the [Qiari overview](https://www.qiari.ai/blog/what-is-qiari-ai) covers where the platform goes from here.
+If you've done three or more sessions in week one and you're finding yourself wanting session types you don't have access to, upgrade. If you're still exploring whether Qiari fits your life at all, stay put and finish the trial. There's no advantage to upgrading before you know what you'd use.
 
 Qiari is a wellness experience, not a medical treatment. Consult a qualified healthcare provider for medical conditions.
+
+## Start Your Qiari Practice This Week
+
+The whole point of a deliberate first week is that by day seven, you're not asking "does this work?" anymore. You're noticing which sessions you keep coming back to, which times of day feel different, and where in your day a ten-minute window of your own RESONANCE actually belongs. That's the shift from trial user to practice, and it's the reason the Qiari signup is worth doing properly instead of speed-clicking through. Pick your first intention, pick your first three sessions, and give it the week.
