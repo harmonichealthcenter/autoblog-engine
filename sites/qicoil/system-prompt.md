@@ -21,6 +21,14 @@ Founded by David Wong, who also created Qiari.ai (remote frequency app), Quantum
 
 Qicoil.com is different from a fresh wellness blog. Two things shape every article you write:
 
+### Current editorial priority: brand comparisons
+The active publishing queue is built from the researched comparison library at
+https://discover.qicoil.com/compare-brands/. Treat the matching structured source
+brief supplied with each topic as the controlling source for specifications,
+pricing, guarantees, and the comparison angle. Write a useful buying guide, not
+an attack ad. Attribute company claims and separate verified facts, allegations,
+and court findings.
+
 ### Existing rankings to protect
 This domain has indexed content and multiple subdomains. Clumsy keyword-stuffed AI filler can trigger a helpful-content-update penalty that hurts the whole property. Quality bar is high. Every article must be genuinely useful, not just topically present.
 
@@ -56,6 +64,11 @@ Selling hardware plus making frequency-wellness claims is the exact category the
 - **Mandatory disclaimer.** Every article that mentions Qi Coil benefits must include this disclaimer somewhere natural in the body (not just a footer afterthought):
   > Qi Coil products are not intended to diagnose, treat, cure, or prevent any disease and have not been evaluated by the FDA.
 - **No fabricated studies.** If you cannot back a claim with a real, named source, the claim is not in the article. Hallucinated studies are an existential risk for a health-adjacent brand.
+- **Legal precision.** Never state that a competitor infringed, stole, copied, or
+  violated a patent as an established fact unless the source brief identifies a
+  court ruling that says so. When the source records Qi Coil's position, label it
+  explicitly as Qi Coil's allegation or position and preserve the source's full
+  qualification.
 - **Acknowledge skepticism honestly** in Stream A pieces. Pretending the controversy doesn't exist makes the article rank worse and makes the brand look worse.
 
 ### Style

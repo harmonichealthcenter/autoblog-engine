@@ -28,8 +28,24 @@ function pickNextTopic(topics) {
   return queued[0];
 }
 
-function buildSystemPrompt(site, internalLinks) {
+function loadComparisonSource(site, topic) {
+  if (topic.type !== "comparison" || !topic.comparison_source_slug) return null;
+
+  const sourcePath = path.join(site.dir, "comparison-source.json");
+  if (!fs.existsSync(sourcePath)) return null;
+
+  const sources = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
+  return sources.find((source) => source.slug === topic.comparison_source_slug) || null;
+}
+
+function buildSystemPrompt(site, topic, internalLinks) {
   let prompt = site.systemPrompt;
+  const comparisonSource = loadComparisonSource(site, topic);
+  if (comparisonSource) {
+    prompt += `\n\n## Required comparison source brief\n`;
+    prompt += `Use the following structured brief as the controlling source for product details. Attribute company claims, preserve legal qualifiers, and do not turn allegations into findings. The reader-facing source page is ${comparisonSource.pageUrl}.\n\n`;
+    prompt += `${JSON.stringify(comparisonSource, null, 2)}\n`;
+  }
   if (internalLinks.length) {
     prompt += `\n\n## Real internal links available on ${site.config.site_url}\n`;
     prompt += `Use these (and only these) when adding internal links. Pick links that are topically relevant to the article. Do NOT invent URLs.\n\n`;
@@ -71,6 +87,10 @@ async function stageDraft({ site, topic, outlineText, systemPrompt }) {
     site.articleTypes.howto ||
     Object.values(site.articleTypes)[0] ||
     "";
+  const closingInstruction =
+    site.config.slug === "qiari"
+      ? 'End with a closing CTA section that uses the keyword "RESONANCE" naturally (phrased differently than any other Qiari article would).'
+      : "End with the low-pressure closing specified in the site system prompt.";
   const instructions = `
 Write the full article based on this outline.
 
@@ -86,7 +106,7 @@ TOPIC:
 OUTLINE AND ANGLE:
 ${outlineText}
 
-Output format: a single markdown document. Start with an H1 title. Then the article body in flowing prose under the outline's H2/H3 structure. End with a closing CTA section that uses the keyword "RESONANCE" naturally (phrased differently than any other Qiari article would).
+Output format: a single markdown document. Start with an H1 title. Then the article body in flowing prose under the outline's H2/H3 structure. ${closingInstruction}
 
 Do NOT include YAML frontmatter — that gets added later. Do NOT label sections "Introduction" or "Conclusion."
 `.trim();
@@ -94,7 +114,11 @@ Do NOT include YAML frontmatter — that gets added later. Do NOT label sections
   return callClaude({ model: MODELS.generate, systemPrompt, instructions, max_tokens: 8000 });
 }
 
-async function stageCritique({ systemPrompt, draftText, prior }) {
+async function stageCritique({ site, systemPrompt, draftText, prior }) {
+  const ctaCheck =
+    site.config.slug === "qiari"
+      ? 'Does the article use the word "RESONANCE" exactly once, in the closing CTA?'
+      : "Does the article follow the site's specified low-pressure closing without using the Qiari-only RESONANCE CTA?";
   const instructions = `
 Critique the draft you just produced against the hard content rules in the system prompt.
 
@@ -103,7 +127,7 @@ For each of these checks, answer YES or NO and quote the offending text if NO:
 1. Are there ZERO em dashes (—) in the article?
 2. Are there ZERO medical claims (treats, cures, heals [disease], FDA approved, clinical efficacy implications)?
 3. Does the article contain at least one specific original angle / framework / claim that is not generic SEO filler?
-4. Does the article use the word "RESONANCE" exactly once, in the closing CTA?
+4. ${ctaCheck}
 5. Are there at least N internal links, where N = floor(word_count / 250)? Count the markdown links to the configured site domain.
 6. Are any of the forbidden phrases present? (in today's fast-paced world, in this article we will explore, harness the power of, unlock the secrets of, delve into, groundbreaking, revolutionary, game-changer)
 7. Is the opening paragraph specific and concrete (not a generic "in the world of wellness..." opener)?
@@ -242,7 +266,7 @@ export async function generateOne(siteSlug) {
   console.log(`[${siteSlug}] generating: ${topic.title_hint}`);
 
   const internalLinks = await fetchSitemapUrls(site.config.site_url);
-  const systemPrompt = buildSystemPrompt(site, internalLinks);
+  const systemPrompt = buildSystemPrompt(site, topic, internalLinks);
 
   let totalCost = 0;
 
@@ -270,6 +294,7 @@ export async function generateOne(siteSlug) {
 
   // Stage 3: critique (continues the same thread so the model self-reviews)
   const critique = await stageCritique({
+    site,
     systemPrompt,
     draftText: draft.text,
     prior: threadAfterDraft,
